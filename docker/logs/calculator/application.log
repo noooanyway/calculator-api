@@ -1310,3 +1310,268 @@
 2025-03-04T23:12:41.262Z  INFO 1 --- [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
 2025-03-04T23:12:41.270Z  INFO 1 --- [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
 2025-03-04T23:12:41.278Z  INFO 1 --- [SpringApplicationShutdownHook] o.a.kafka.common.utils.AppInfoParser     : App info kafka.producer for producer-1 unregistered
+2025-03-05T00:49:01.081Z  INFO 1 --- [main] com.wit.rest.CalculatorApiApplication    : Starting CalculatorApiApplication v0.0.1-SNAPSHOT using Java 17.0.2 with PID 1 (/app/app.jar started by root in /app)
+2025-03-05T00:49:01.115Z DEBUG 1 --- [main] com.wit.rest.CalculatorApiApplication    : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-05T00:49:01.166Z  INFO 1 --- [main] com.wit.rest.CalculatorApiApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-03-05T00:49:08.424Z  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-03-05T00:49:08.490Z  INFO 1 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-05T00:49:08.494Z  INFO 1 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-05T00:49:08.635Z  INFO 1 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-05T00:49:08.637Z  INFO 1 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6962 ms
+2025-03-05T00:49:11.413Z  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-03-05T00:49:11.613Z  INFO 1 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [kafka:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-calc-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = calc-group
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2025-03-05T00:49:11.826Z  INFO 1 --- [main] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2025-03-05T00:49:12.748Z  INFO 1 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.8.1
+2025-03-05T00:49:12.764Z  INFO 1 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 70d6ff42debf7e17
+2025-03-05T00:49:12.771Z  INFO 1 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1741135752732
+2025-03-05T00:49:12.826Z  INFO 1 --- [main] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Subscribed to topic(s): calc-requests
+2025-03-05T00:49:12.986Z  INFO 1 --- [main] com.wit.rest.CalculatorApiApplication    : Started CalculatorApiApplication in 23.479 seconds (process running for 27.618)
+2025-03-05T00:49:14.783Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Cluster ID: cFRT4VxfT_K2nnHdjQZ3oQ
+2025-03-05T00:49:14.790Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Discovered group coordinator kafka:9092 (id: 2147483646 rack: null)
+2025-03-05T00:49:14.810Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] (Re-)joining group
+2025-03-05T00:49:14.865Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Request joining group due to: need to re-join with the given member-id: consumer-calc-group-1-b9aa39c1-4f61-4814-8ec6-a6989a5d217a
+2025-03-05T00:49:14.871Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] (Re-)joining group
+2025-03-05T00:49:17.811Z  INFO 1 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-05T00:49:17.814Z  INFO 1 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-05T00:49:17.819Z  INFO 1 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2025-03-05T00:49:17.850Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Successfully joined group with generation Generation{generationId=8, memberId='consumer-calc-group-1-b9aa39c1-4f61-4814-8ec6-a6989a5d217a', protocol='range'}
+2025-03-05T00:49:17.949Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Successfully synced group in generation Generation{generationId=8, memberId='consumer-calc-group-1-b9aa39c1-4f61-4814-8ec6-a6989a5d217a', protocol='range'}
+2025-03-05T00:49:17.968Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Notifying assignor about the new Assignment(partitions=[])
+2025-03-05T00:49:17.971Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Adding newly assigned partitions: 
+2025-03-05T00:49:17.979Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : calc-group: partitions assigned: []
+2025-03-05T00:49:18.061Z  INFO 1 --- [http-nio-8081-exec-1] com.wit.calculator.CalculatorService     : Calculando multiplicação: 21 * 17
+2025-03-05T00:49:18.063Z  INFO 1 --- [http-nio-8081-exec-1] com.wit.rest.CalculatorController        : UUID=9ae24927-f2d6-4217-8095-db8fd89f7446 | Operação=multiplication | a=21 | b=17 | Resultado=357
+2025-03-05T00:49:18.114Z  INFO 1 --- [http-nio-8081-exec-1] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [kafka:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.gzip.level = -1
+	compression.lz4.level = 9
+	compression.type = none
+	compression.zstd.level = 3
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	enable.metrics.push = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
+
+2025-03-05T00:49:18.136Z  INFO 1 --- [http-nio-8081-exec-1] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2025-03-05T00:49:18.193Z  INFO 1 --- [http-nio-8081-exec-1] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Instantiated an idempotent producer.
+2025-03-05T00:49:18.280Z  INFO 1 --- [http-nio-8081-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.8.1
+2025-03-05T00:49:18.286Z  INFO 1 --- [http-nio-8081-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 70d6ff42debf7e17
+2025-03-05T00:49:18.293Z  INFO 1 --- [http-nio-8081-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1741135758280
+2025-03-05T00:49:18.323Z  INFO 1 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: cFRT4VxfT_K2nnHdjQZ3oQ
+2025-03-05T00:49:18.334Z  INFO 1 --- [kafka-producer-network-thread | producer-1] o.a.k.c.p.internals.TransactionManager   : [Producer clientId=producer-1] ProducerId set to 2001 with epoch 0
+2025-03-05T00:52:14.532Z  INFO 1 --- [http-nio-8081-exec-3] com.wit.calculator.CalculatorService     : Calculando soma: 5 + 3
+2025-03-05T00:52:14.536Z  INFO 1 --- [http-nio-8081-exec-3] com.wit.rest.CalculatorController        : UUID=4a42c496-8e29-43fb-ba14-023be03f377e | Operação=sum | a=5 | b=3 | Resultado=8
+2025-03-05T00:58:14.810Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
+2025-03-05T00:58:18.468Z  INFO 1 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2025-03-05T01:05:05.440Z ERROR 1 --- [http-nio-8081-exec-5] com.wit.calculator.CalculatorService     : Tentativa de divisão por zero: 21 / 0
+2025-03-05T01:05:05.445Z ERROR 1 --- [http-nio-8081-exec-5] com.wit.rest.CalculatorController        : Erro UUID=cb1c85e1-5cce-4b71-8f6d-aea435c32a3c | Operação=division | a=21 | b=0 | Erro=Divisão por zero não permitida.
+2025-03-05T01:08:14.821Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
+2025-03-05T01:08:18.491Z  INFO 1 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2025-03-05T01:19:55.148Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Member consumer-calc-group-1-b9aa39c1-4f61-4814-8ec6-a6989a5d217a sending LeaveGroup request to coordinator kafka:9092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+2025-03-05T01:19:55.227Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-03-05T01:19:55.251Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Request joining group due to: consumer pro-actively leaving the group
+2025-03-05T01:19:55.254Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Unsubscribed all topics or patterns and assigned partitions
+2025-03-05T01:19:55.371Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-03-05T01:19:55.373Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Request joining group due to: consumer pro-actively leaving the group
+2025-03-05T01:19:55.524Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2025-03-05T01:19:55.529Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-03-05T01:19:55.535Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2025-03-05T01:19:55.543Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2025-03-05T01:19:55.720Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-calc-group-1 unregistered
+2025-03-05T01:19:55.763Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : calc-group: Consumer stopped
+2025-03-05T01:19:55.807Z  INFO 1 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-05T01:19:55.960Z  INFO 1 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-05T01:19:56.004Z  INFO 1 --- [SpringApplicationShutdownHook] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2025-03-05T01:19:56.052Z  INFO 1 --- [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2025-03-05T01:19:56.054Z  INFO 1 --- [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-03-05T01:19:56.057Z  INFO 1 --- [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2025-03-05T01:19:56.062Z  INFO 1 --- [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2025-03-05T01:19:56.073Z  INFO 1 --- [SpringApplicationShutdownHook] o.a.kafka.common.utils.AppInfoParser     : App info kafka.producer for producer-1 unregistered
+2025-03-05T01:21:25.034Z  INFO 1 --- [main] com.wit.rest.CalculatorApiApplication    : Starting CalculatorApiApplication v0.0.1-SNAPSHOT using Java 17.0.2 with PID 1 (/app/app.jar started by root in /app)
+2025-03-05T01:21:25.051Z DEBUG 1 --- [main] com.wit.rest.CalculatorApiApplication    : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-05T01:21:25.068Z  INFO 1 --- [main] com.wit.rest.CalculatorApiApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-03-05T01:21:36.627Z  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-03-05T01:21:36.996Z  INFO 1 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 11272 ms
