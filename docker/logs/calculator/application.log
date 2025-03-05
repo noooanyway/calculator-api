@@ -1,13 +1,13 @@
-2025-03-04T20:51:27.227Z  INFO 1 --- [main] com.wit.rest.CalculatorApiApplication    : Starting CalculatorApiApplication v0.0.1-SNAPSHOT using Java 17.0.2 with PID 1 (/app/app.jar started by root in /app)
-2025-03-04T20:51:27.330Z DEBUG 1 --- [main] com.wit.rest.CalculatorApiApplication    : Running with Spring Boot v3.4.3, Spring v6.2.3
-2025-03-04T20:51:27.354Z  INFO 1 --- [main] com.wit.rest.CalculatorApiApplication    : No active profile set, falling back to 1 default profile: "default"
-2025-03-04T20:51:46.371Z  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
-2025-03-04T20:51:46.747Z  INFO 1 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-03-04T20:51:46.769Z  INFO 1 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-03-04T20:51:47.263Z  INFO 1 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-03-04T20:51:47.280Z  INFO 1 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 18342 ms
-2025-03-04T20:52:03.015Z  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
-2025-03-04T20:52:04.741Z  INFO 1 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+2025-03-05T00:40:25.829Z  INFO 1 --- [main] com.wit.rest.CalculatorApiApplication    : Starting CalculatorApiApplication v0.0.1-SNAPSHOT using Java 17.0.2 with PID 1 (/app/app.jar started by root in /app)
+2025-03-05T00:40:25.969Z DEBUG 1 --- [main] com.wit.rest.CalculatorApiApplication    : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-05T00:40:25.981Z  INFO 1 --- [main] com.wit.rest.CalculatorApiApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-03-05T00:40:38.475Z  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-03-05T00:40:38.535Z  INFO 1 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-05T00:40:38.538Z  INFO 1 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-05T00:40:38.718Z  INFO 1 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-05T00:40:38.728Z  INFO 1 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 11395 ms
+2025-03-05T00:40:42.077Z  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-03-05T00:40:42.367Z  INFO 1 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
 	allow.auto.create.topics = true
 	auto.commit.interval.ms = 5000
 	auto.include.jmx.reporter = true
@@ -106,79 +106,60 @@
 	ssl.truststore.type = JKS
 	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
 
-2025-03-04T20:52:06.467Z  INFO 1 --- [main] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
-2025-03-04T20:52:10.546Z  INFO 1 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.8.1
-2025-03-04T20:52:10.608Z  INFO 1 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 70d6ff42debf7e17
-2025-03-04T20:52:10.641Z  INFO 1 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1741121530499
-2025-03-04T20:52:10.725Z  INFO 1 --- [main] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Subscribed to topic(s): calc-requests
-2025-03-04T20:52:11.626Z  INFO 1 --- [main] com.wit.rest.CalculatorApiApplication    : Started CalculatorApiApplication in 53.061 seconds (process running for 62.432)
-2025-03-04T20:52:16.742Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T20:52:16.959Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T20:52:17.005Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T20:52:17.310Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T20:52:17.331Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T20:52:17.380Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T20:52:17.692Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T20:52:17.698Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T20:52:17.712Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T20:52:17.954Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T20:52:17.973Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T20:52:18.026Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T20:52:18.436Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T20:52:18.469Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T20:52:18.472Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T20:52:19.326Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T20:52:19.362Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T20:52:19.404Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T20:52:20.339Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T20:52:20.375Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T20:52:20.422Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T20:52:21.227Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T20:52:21.234Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T20:52:21.240Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T20:52:22.255Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T20:52:22.270Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T20:52:22.285Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T20:52:23.260Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T20:52:23.274Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T20:52:23.286Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T20:52:24.294Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T20:52:24.296Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T20:52:24.308Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T20:52:25.123Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T20:52:25.138Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T20:52:25.153Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T20:52:26.162Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T20:52:26.165Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T20:52:26.187Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T20:52:27.121Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T20:52:27.139Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T20:52:27.161Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T20:52:28.152Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T20:52:28.171Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T20:52:28.190Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T20:52:32.169Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Error while fetching metadata with correlation id 2 : {calc-requests=UNKNOWN_TOPIC_OR_PARTITION}
-2025-03-04T20:52:32.181Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Cluster ID: mpa1Uu8mT6WY4TmDJ6wVTg
-2025-03-04T20:52:32.261Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Error while fetching metadata with correlation id 6 : {calc-requests=UNKNOWN_TOPIC_OR_PARTITION}
-2025-03-04T20:52:32.966Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Error while fetching metadata with correlation id 7 : {calc-requests=LEADER_NOT_AVAILABLE}
-2025-03-04T20:52:33.527Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Error while fetching metadata with correlation id 9 : {calc-requests=LEADER_NOT_AVAILABLE}
-2025-03-04T20:52:34.665Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Error while fetching metadata with correlation id 11 : {calc-requests=LEADER_NOT_AVAILABLE}
-2025-03-04T20:52:35.860Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Error while fetching metadata with correlation id 13 : {calc-requests=LEADER_NOT_AVAILABLE}
-2025-03-04T20:52:45.609Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Discovered group coordinator kafka:9092 (id: 2147483646 rack: null)
-2025-03-04T20:52:45.667Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] (Re-)joining group
-2025-03-04T20:52:46.019Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Request joining group due to: need to re-join with the given member-id: consumer-calc-group-1-fe3719dd-9e9a-42e3-922f-23a280dfa378
-2025-03-04T20:52:46.040Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] (Re-)joining group
-2025-03-04T20:52:52.222Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Successfully joined group with generation Generation{generationId=1, memberId='consumer-calc-group-1-fe3719dd-9e9a-42e3-922f-23a280dfa378', protocol='range'}
-2025-03-04T20:52:53.050Z  INFO 1 --- [kafka-coordinator-heartbeat-thread | calc-group] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Successfully synced group in generation Generation{generationId=1, memberId='consumer-calc-group-1-fe3719dd-9e9a-42e3-922f-23a280dfa378', protocol='range'}
-2025-03-04T20:52:53.087Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Notifying assignor about the new Assignment(partitions=[])
-2025-03-04T20:52:53.105Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Adding newly assigned partitions: 
-2025-03-04T20:52:53.144Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : calc-group: partitions assigned: []
-2025-03-04T20:54:27.665Z  INFO 1 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-03-04T20:54:27.679Z  INFO 1 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-03-04T20:54:27.911Z  INFO 1 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 228 ms
-2025-03-04T20:54:28.686Z  INFO 1 --- [http-nio-8081-exec-1] com.wit.calculator.CalculatorService     : Calculando multiplicação: 21 * 17
-2025-03-04T20:54:28.704Z  INFO 1 --- [http-nio-8081-exec-1] com.wit.rest.CalculatorController        : UUID=b45f5abe-86a2-4c4f-b92a-013ed3881124 | Operação=multiplication | a=21 | b=17 | Resultado=357
-2025-03-04T20:54:28.855Z  INFO 1 --- [http-nio-8081-exec-1] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+2025-03-05T00:40:42.685Z  INFO 1 --- [main] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2025-03-05T00:40:43.547Z  INFO 1 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.8.1
+2025-03-05T00:40:43.556Z  INFO 1 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 70d6ff42debf7e17
+2025-03-05T00:40:43.558Z  INFO 1 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1741135243542
+2025-03-05T00:40:43.573Z  INFO 1 --- [main] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Subscribed to topic(s): calc-requests
+2025-03-05T00:40:43.699Z  INFO 1 --- [main] com.wit.rest.CalculatorApiApplication    : Started CalculatorApiApplication in 29.891 seconds (process running for 35.625)
+2025-03-05T00:40:48.363Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
+2025-03-05T00:40:48.386Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
+2025-03-05T00:40:48.389Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2025-03-05T00:40:48.527Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
+2025-03-05T00:40:48.529Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
+2025-03-05T00:40:48.530Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2025-03-05T00:40:48.787Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
+2025-03-05T00:40:48.802Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
+2025-03-05T00:40:48.808Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2025-03-05T00:40:49.191Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
+2025-03-05T00:40:49.303Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
+2025-03-05T00:40:49.309Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2025-03-05T00:40:49.585Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
+2025-03-05T00:40:49.588Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
+2025-03-05T00:40:49.591Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2025-03-05T00:40:50.387Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
+2025-03-05T00:40:50.388Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
+2025-03-05T00:40:50.389Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2025-03-05T00:40:51.417Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
+2025-03-05T00:40:51.436Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
+2025-03-05T00:40:51.439Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2025-03-05T00:40:52.420Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
+2025-03-05T00:40:52.422Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
+2025-03-05T00:40:52.423Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2025-03-05T00:40:53.460Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
+2025-03-05T00:40:53.476Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
+2025-03-05T00:40:53.497Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2025-03-05T00:40:54.391Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
+2025-03-05T00:40:54.393Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
+2025-03-05T00:40:54.395Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
+2025-03-05T00:40:59.784Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Error while fetching metadata with correlation id 2 : {calc-requests=UNKNOWN_TOPIC_OR_PARTITION}
+2025-03-05T00:40:59.819Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Cluster ID: cFRT4VxfT_K2nnHdjQZ3oQ
+2025-03-05T00:41:00.202Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Discovered group coordinator kafka:9092 (id: 2147483646 rack: null)
+2025-03-05T00:41:00.272Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] (Re-)joining group
+2025-03-05T00:41:00.428Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Request joining group due to: need to re-join with the given member-id: consumer-calc-group-1-91352660-6486-48ed-9fcf-41ee3f829b1a
+2025-03-05T00:41:00.436Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] (Re-)joining group
+2025-03-05T00:41:03.409Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Successfully joined group with generation Generation{generationId=5, memberId='consumer-calc-group-1-91352660-6486-48ed-9fcf-41ee3f829b1a', protocol='range'}
+2025-03-05T00:41:03.735Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Successfully synced group in generation Generation{generationId=5, memberId='consumer-calc-group-1-91352660-6486-48ed-9fcf-41ee3f829b1a', protocol='range'}
+2025-03-05T00:41:03.754Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Notifying assignor about the new Assignment(partitions=[calc-requests-0])
+2025-03-05T00:41:03.772Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Adding newly assigned partitions: calc-requests-0
+2025-03-05T00:41:03.887Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerUtils        : Setting offset for partition calc-requests-0 to the committed offset FetchPosition{offset=2, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1 rack: null)], epoch=0}}
+2025-03-05T00:41:03.929Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : calc-group: partitions assigned: [calc-requests-0]
+2025-03-05T00:41:10.904Z  INFO 1 --- [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-05T00:41:10.907Z  INFO 1 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-05T00:41:10.951Z  INFO 1 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 43 ms
+2025-03-05T00:41:11.162Z  INFO 1 --- [http-nio-8081-exec-2] com.wit.calculator.CalculatorService     : Calculando multiplicação: 21 * 17
+2025-03-05T00:41:11.163Z  INFO 1 --- [http-nio-8081-exec-2] com.wit.rest.CalculatorController        : UUID=4dae2b59-ac12-47f0-bd04-0a8bbfe123e1 | Operação=multiplication | a=21 | b=17 | Resultado=357
+2025-03-05T00:41:11.233Z  INFO 1 --- [http-nio-8081-exec-2] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
 	acks = -1
 	auto.include.jmx.reporter = true
 	batch.size = 16384
@@ -274,1042 +255,57 @@
 	transactional.id = null
 	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
 
-2025-03-04T20:54:28.935Z  INFO 1 --- [http-nio-8081-exec-1] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
-2025-03-04T20:54:29.237Z  INFO 1 --- [http-nio-8081-exec-1] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Instantiated an idempotent producer.
-2025-03-04T20:54:29.516Z  INFO 1 --- [http-nio-8081-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.8.1
-2025-03-04T20:54:29.519Z  INFO 1 --- [http-nio-8081-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 70d6ff42debf7e17
-2025-03-04T20:54:29.520Z  INFO 1 --- [http-nio-8081-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1741121669515
-2025-03-04T20:54:29.676Z  INFO 1 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: mpa1Uu8mT6WY4TmDJ6wVTg
-2025-03-04T20:54:30.284Z  INFO 1 --- [kafka-producer-network-thread | producer-1] o.a.k.c.p.internals.TransactionManager   : [Producer clientId=producer-1] ProducerId set to 0 with epoch 0
-2025-03-04T20:58:59.395Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Member consumer-calc-group-1-fe3719dd-9e9a-42e3-922f-23a280dfa378 sending LeaveGroup request to coordinator kafka:9092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
-2025-03-04T20:58:59.434Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Resetting generation and member id due to: consumer pro-actively leaving the group
-2025-03-04T20:58:59.437Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Request joining group due to: consumer pro-actively leaving the group
-2025-03-04T20:58:59.441Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Unsubscribed all topics or patterns and assigned partitions
-2025-03-04T20:58:59.475Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Resetting generation and member id due to: consumer pro-actively leaving the group
-2025-03-04T20:58:59.479Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Request joining group due to: consumer pro-actively leaving the group
-2025-03-04T20:58:59.713Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
-2025-03-04T20:58:59.718Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
-2025-03-04T20:58:59.720Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
-2025-03-04T20:58:59.724Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
-2025-03-04T20:58:59.815Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-calc-group-1 unregistered
-2025-03-04T20:58:59.842Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : calc-group: Consumer stopped
-2025-03-04T20:58:59.888Z  INFO 1 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-03-04T20:59:00.022Z  INFO 1 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-03-04T20:59:00.072Z  INFO 1 --- [SpringApplicationShutdownHook] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
-2025-03-04T20:59:00.127Z  INFO 1 --- [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
-2025-03-04T20:59:00.131Z  INFO 1 --- [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
-2025-03-04T20:59:00.134Z  INFO 1 --- [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
-2025-03-04T20:59:00.146Z  INFO 1 --- [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
-2025-03-04T20:59:00.155Z  INFO 1 --- [SpringApplicationShutdownHook] o.a.kafka.common.utils.AppInfoParser     : App info kafka.producer for producer-1 unregistered
-2025-03-04T21:37:24.891Z  INFO 1 --- [main] com.wit.rest.CalculatorApiApplication    : Starting CalculatorApiApplication v0.0.1-SNAPSHOT using Java 17.0.2 with PID 1 (/app/app.jar started by root in /app)
-2025-03-04T21:37:24.932Z DEBUG 1 --- [main] com.wit.rest.CalculatorApiApplication    : Running with Spring Boot v3.4.3, Spring v6.2.3
-2025-03-04T21:37:24.982Z  INFO 1 --- [main] com.wit.rest.CalculatorApiApplication    : No active profile set, falling back to 1 default profile: "default"
-2025-03-04T21:37:40.783Z  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
-2025-03-04T21:37:41.169Z  INFO 1 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-03-04T21:37:41.202Z  INFO 1 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-03-04T21:37:42.057Z  INFO 1 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-03-04T21:37:42.101Z  INFO 1 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 15631 ms
-2025-03-04T21:37:59.756Z  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
-2025-03-04T21:38:01.991Z  INFO 1 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
-	allow.auto.create.topics = true
-	auto.commit.interval.ms = 5000
-	auto.include.jmx.reporter = true
-	auto.offset.reset = latest
-	bootstrap.servers = [kafka:9092]
-	check.crcs = true
-	client.dns.lookup = use_all_dns_ips
-	client.id = consumer-calc-group-1
-	client.rack = 
-	connections.max.idle.ms = 540000
-	default.api.timeout.ms = 60000
-	enable.auto.commit = false
-	enable.metrics.push = true
-	exclude.internal.topics = true
-	fetch.max.bytes = 52428800
-	fetch.max.wait.ms = 500
-	fetch.min.bytes = 1
-	group.id = calc-group
-	group.instance.id = null
-	group.protocol = classic
-	group.remote.assignor = null
-	heartbeat.interval.ms = 3000
-	interceptor.classes = []
-	internal.leave.group.on.close = true
-	internal.throw.on.fetch.stable.offset.unsupported = false
-	isolation.level = read_uncommitted
-	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
-	max.partition.fetch.bytes = 1048576
-	max.poll.interval.ms = 300000
-	max.poll.records = 500
-	metadata.max.age.ms = 300000
-	metadata.recovery.strategy = none
-	metric.reporters = []
-	metrics.num.samples = 2
-	metrics.recording.level = INFO
-	metrics.sample.window.ms = 30000
-	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
-	receive.buffer.bytes = 65536
-	reconnect.backoff.max.ms = 1000
-	reconnect.backoff.ms = 50
-	request.timeout.ms = 30000
-	retry.backoff.max.ms = 1000
-	retry.backoff.ms = 100
-	sasl.client.callback.handler.class = null
-	sasl.jaas.config = null
-	sasl.kerberos.kinit.cmd = /usr/bin/kinit
-	sasl.kerberos.min.time.before.relogin = 60000
-	sasl.kerberos.service.name = null
-	sasl.kerberos.ticket.renew.jitter = 0.05
-	sasl.kerberos.ticket.renew.window.factor = 0.8
-	sasl.login.callback.handler.class = null
-	sasl.login.class = null
-	sasl.login.connect.timeout.ms = null
-	sasl.login.read.timeout.ms = null
-	sasl.login.refresh.buffer.seconds = 300
-	sasl.login.refresh.min.period.seconds = 60
-	sasl.login.refresh.window.factor = 0.8
-	sasl.login.refresh.window.jitter = 0.05
-	sasl.login.retry.backoff.max.ms = 10000
-	sasl.login.retry.backoff.ms = 100
-	sasl.mechanism = GSSAPI
-	sasl.oauthbearer.clock.skew.seconds = 30
-	sasl.oauthbearer.expected.audience = null
-	sasl.oauthbearer.expected.issuer = null
-	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
-	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
-	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
-	sasl.oauthbearer.jwks.endpoint.url = null
-	sasl.oauthbearer.scope.claim.name = scope
-	sasl.oauthbearer.sub.claim.name = sub
-	sasl.oauthbearer.token.endpoint.url = null
-	security.protocol = PLAINTEXT
-	security.providers = null
-	send.buffer.bytes = 131072
-	session.timeout.ms = 45000
-	socket.connection.setup.timeout.max.ms = 30000
-	socket.connection.setup.timeout.ms = 10000
-	ssl.cipher.suites = null
-	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
-	ssl.endpoint.identification.algorithm = https
-	ssl.engine.factory.class = null
-	ssl.key.password = null
-	ssl.keymanager.algorithm = SunX509
-	ssl.keystore.certificate.chain = null
-	ssl.keystore.key = null
-	ssl.keystore.location = null
-	ssl.keystore.password = null
-	ssl.keystore.type = JKS
-	ssl.protocol = TLSv1.3
-	ssl.provider = null
-	ssl.secure.random.implementation = null
-	ssl.trustmanager.algorithm = PKIX
-	ssl.truststore.certificates = null
-	ssl.truststore.location = null
-	ssl.truststore.password = null
-	ssl.truststore.type = JKS
-	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
-
-2025-03-04T21:38:05.181Z  INFO 1 --- [main] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
-2025-03-04T21:38:10.597Z  INFO 1 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.8.1
-2025-03-04T21:38:10.658Z  INFO 1 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 70d6ff42debf7e17
-2025-03-04T21:38:10.669Z  INFO 1 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1741124290567
-2025-03-04T21:38:13.468Z  INFO 1 --- [main] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Subscribed to topic(s): calc-requests
-2025-03-04T21:38:15.936Z  INFO 1 --- [main] com.wit.rest.CalculatorApiApplication    : Started CalculatorApiApplication in 60.045 seconds (process running for 66.799)
-2025-03-04T21:38:24.280Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T21:38:24.333Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T21:38:24.351Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T21:38:24.514Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T21:38:24.522Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T21:38:24.530Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T21:38:24.698Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T21:38:24.714Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T21:38:24.731Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T21:38:24.919Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T21:38:24.937Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T21:38:24.941Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T21:38:25.386Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T21:38:25.409Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T21:38:25.420Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T21:38:26.342Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T21:38:26.347Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T21:38:26.379Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T21:38:27.421Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T21:38:27.443Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T21:38:27.455Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T21:38:28.466Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T21:38:28.468Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T21:38:28.474Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T21:38:29.347Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T21:38:29.351Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T21:38:29.354Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T21:38:30.210Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T21:38:30.230Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T21:38:30.232Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T21:38:31.195Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T21:38:31.201Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T21:38:31.203Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T21:38:32.219Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T21:38:32.225Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T21:38:32.227Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T21:38:33.223Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T21:38:33.232Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T21:38:33.242Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T21:38:34.256Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T21:38:34.276Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T21:38:34.284Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T21:38:35.142Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T21:38:35.159Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T21:38:35.162Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T21:38:40.752Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Error while fetching metadata with correlation id 2 : {calc-requests=UNKNOWN_TOPIC_OR_PARTITION}
-2025-03-04T21:38:40.880Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Cluster ID: cEz68R04TVqk3FQrchZiKw
-2025-03-04T21:38:41.460Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Error while fetching metadata with correlation id 6 : {calc-requests=LEADER_NOT_AVAILABLE}
-2025-03-04T21:38:41.833Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Error while fetching metadata with correlation id 7 : {calc-requests=LEADER_NOT_AVAILABLE}
-2025-03-04T21:38:42.481Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Error while fetching metadata with correlation id 9 : {calc-requests=LEADER_NOT_AVAILABLE}
-2025-03-04T21:38:43.433Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Error while fetching metadata with correlation id 11 : {calc-requests=UNKNOWN_TOPIC_OR_PARTITION}
-2025-03-04T21:38:44.862Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Error while fetching metadata with correlation id 13 : {calc-requests=UNKNOWN_TOPIC_OR_PARTITION}
-2025-03-04T21:38:45.993Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Error while fetching metadata with correlation id 16 : {calc-requests=LEADER_NOT_AVAILABLE}
-2025-03-04T21:38:57.010Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Discovered group coordinator kafka:9092 (id: 2147483646 rack: null)
-2025-03-04T21:38:57.136Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] (Re-)joining group
-2025-03-04T21:38:57.624Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Request joining group due to: need to re-join with the given member-id: consumer-calc-group-1-7d34276a-100c-406a-9ca6-e5244ee4b80f
-2025-03-04T21:38:57.631Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] (Re-)joining group
-2025-03-04T21:39:03.972Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Successfully joined group with generation Generation{generationId=1, memberId='consumer-calc-group-1-7d34276a-100c-406a-9ca6-e5244ee4b80f', protocol='range'}
-2025-03-04T21:39:04.165Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Finished assignment for group at generation 1: {consumer-calc-group-1-7d34276a-100c-406a-9ca6-e5244ee4b80f=Assignment(partitions=[calc-requests-0]), consumer-calc-group-1-d978f182-bd8d-4ad8-b78a-381d653b5070=Assignment(partitions=[])}
-2025-03-04T21:39:04.829Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Successfully synced group in generation Generation{generationId=1, memberId='consumer-calc-group-1-7d34276a-100c-406a-9ca6-e5244ee4b80f', protocol='range'}
-2025-03-04T21:39:04.839Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Notifying assignor about the new Assignment(partitions=[calc-requests-0])
-2025-03-04T21:39:04.918Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Adding newly assigned partitions: calc-requests-0
-2025-03-04T21:39:05.075Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Found no committed offset for partition calc-requests-0
-2025-03-04T21:39:05.143Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Found no committed offset for partition calc-requests-0
-2025-03-04T21:39:05.314Z  INFO 1 --- [kafka-coordinator-heartbeat-thread | calc-group] o.a.k.c.c.internals.SubscriptionState    : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Resetting offset for partition calc-requests-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1 rack: null)], epoch=0}}.
-2025-03-04T21:39:05.574Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : calc-group: partitions assigned: [calc-requests-0]
-2025-03-04T21:40:13.141Z  INFO 1 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-03-04T21:40:13.186Z  INFO 1 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-03-04T21:40:13.548Z  INFO 1 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 353 ms
-2025-03-04T21:40:15.194Z  INFO 1 --- [http-nio-8081-exec-1] com.wit.calculator.CalculatorService     : Calculando multiplicação: 21 * 17
-2025-03-04T21:40:15.213Z  INFO 1 --- [http-nio-8081-exec-1] com.wit.rest.CalculatorController        : UUID=a2383324-6817-4024-b435-e138794809fe | Operação=multiplication | a=21 | b=17 | Resultado=357
-2025-03-04T21:40:15.643Z  INFO 1 --- [http-nio-8081-exec-1] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
-	acks = -1
-	auto.include.jmx.reporter = true
-	batch.size = 16384
-	bootstrap.servers = [kafka:9092]
-	buffer.memory = 33554432
-	client.dns.lookup = use_all_dns_ips
-	client.id = producer-1
-	compression.gzip.level = -1
-	compression.lz4.level = 9
-	compression.type = none
-	compression.zstd.level = 3
-	connections.max.idle.ms = 540000
-	delivery.timeout.ms = 120000
-	enable.idempotence = true
-	enable.metrics.push = true
-	interceptor.classes = []
-	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
-	linger.ms = 0
-	max.block.ms = 60000
-	max.in.flight.requests.per.connection = 5
-	max.request.size = 1048576
-	metadata.max.age.ms = 300000
-	metadata.max.idle.ms = 300000
-	metadata.recovery.strategy = none
-	metric.reporters = []
-	metrics.num.samples = 2
-	metrics.recording.level = INFO
-	metrics.sample.window.ms = 30000
-	partitioner.adaptive.partitioning.enable = true
-	partitioner.availability.timeout.ms = 0
-	partitioner.class = null
-	partitioner.ignore.keys = false
-	receive.buffer.bytes = 32768
-	reconnect.backoff.max.ms = 1000
-	reconnect.backoff.ms = 50
-	request.timeout.ms = 30000
-	retries = 2147483647
-	retry.backoff.max.ms = 1000
-	retry.backoff.ms = 100
-	sasl.client.callback.handler.class = null
-	sasl.jaas.config = null
-	sasl.kerberos.kinit.cmd = /usr/bin/kinit
-	sasl.kerberos.min.time.before.relogin = 60000
-	sasl.kerberos.service.name = null
-	sasl.kerberos.ticket.renew.jitter = 0.05
-	sasl.kerberos.ticket.renew.window.factor = 0.8
-	sasl.login.callback.handler.class = null
-	sasl.login.class = null
-	sasl.login.connect.timeout.ms = null
-	sasl.login.read.timeout.ms = null
-	sasl.login.refresh.buffer.seconds = 300
-	sasl.login.refresh.min.period.seconds = 60
-	sasl.login.refresh.window.factor = 0.8
-	sasl.login.refresh.window.jitter = 0.05
-	sasl.login.retry.backoff.max.ms = 10000
-	sasl.login.retry.backoff.ms = 100
-	sasl.mechanism = GSSAPI
-	sasl.oauthbearer.clock.skew.seconds = 30
-	sasl.oauthbearer.expected.audience = null
-	sasl.oauthbearer.expected.issuer = null
-	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
-	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
-	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
-	sasl.oauthbearer.jwks.endpoint.url = null
-	sasl.oauthbearer.scope.claim.name = scope
-	sasl.oauthbearer.sub.claim.name = sub
-	sasl.oauthbearer.token.endpoint.url = null
-	security.protocol = PLAINTEXT
-	security.providers = null
-	send.buffer.bytes = 131072
-	socket.connection.setup.timeout.max.ms = 30000
-	socket.connection.setup.timeout.ms = 10000
-	ssl.cipher.suites = null
-	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
-	ssl.endpoint.identification.algorithm = https
-	ssl.engine.factory.class = null
-	ssl.key.password = null
-	ssl.keymanager.algorithm = SunX509
-	ssl.keystore.certificate.chain = null
-	ssl.keystore.key = null
-	ssl.keystore.location = null
-	ssl.keystore.password = null
-	ssl.keystore.type = JKS
-	ssl.protocol = TLSv1.3
-	ssl.provider = null
-	ssl.secure.random.implementation = null
-	ssl.trustmanager.algorithm = PKIX
-	ssl.truststore.certificates = null
-	ssl.truststore.location = null
-	ssl.truststore.password = null
-	ssl.truststore.type = JKS
-	transaction.timeout.ms = 60000
-	transactional.id = null
-	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
-
-2025-03-04T21:40:15.728Z  INFO 1 --- [http-nio-8081-exec-1] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
-2025-03-04T21:40:16.101Z  INFO 1 --- [http-nio-8081-exec-1] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Instantiated an idempotent producer.
-2025-03-04T21:40:16.485Z  INFO 1 --- [http-nio-8081-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.8.1
-2025-03-04T21:40:16.493Z  INFO 1 --- [http-nio-8081-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 70d6ff42debf7e17
-2025-03-04T21:40:16.496Z  INFO 1 --- [http-nio-8081-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1741124416484
-2025-03-04T21:40:16.824Z  INFO 1 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: cEz68R04TVqk3FQrchZiKw
-2025-03-04T21:40:18.842Z  INFO 1 --- [kafka-producer-network-thread | producer-1] o.a.k.c.p.internals.TransactionManager   : [Producer clientId=producer-1] ProducerId set to 0 with epoch 0
-2025-03-04T21:40:21.103Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.wit.rest.kafka.OperationConsumer     : UUID=null | Mensagem recebida via Kafka: Operação=multiplication | a=21 | b=17 | Resultado=357
-2025-03-04T21:40:24.763Z  INFO 1 --- [http-nio-8081-exec-3] com.wit.calculator.CalculatorService     : Calculando multiplicação: 21 * 17
-2025-03-04T21:40:24.775Z  INFO 1 --- [http-nio-8081-exec-3] com.wit.rest.CalculatorController        : UUID=1b09f193-716a-461f-8925-a52b755e0907 | Operação=multiplication | a=21 | b=17 | Resultado=357
-2025-03-04T21:40:24.908Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.wit.rest.kafka.OperationConsumer     : UUID=null | Mensagem recebida via Kafka: Operação=multiplication | a=21 | b=17 | Resultado=357
-2025-03-04T21:42:35.877Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Revoke previously assigned partitions calc-requests-0
-2025-03-04T21:42:35.981Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : calc-group: partitions revoked: [calc-requests-0]
-2025-03-04T21:42:36.004Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Member consumer-calc-group-1-7d34276a-100c-406a-9ca6-e5244ee4b80f sending LeaveGroup request to coordinator kafka:9092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
-2025-03-04T21:42:36.020Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Resetting generation and member id due to: consumer pro-actively leaving the group
-2025-03-04T21:42:36.027Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Request joining group due to: consumer pro-actively leaving the group
-2025-03-04T21:42:36.028Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Unsubscribed all topics or patterns and assigned partitions
-2025-03-04T21:42:36.108Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Resetting generation and member id due to: consumer pro-actively leaving the group
-2025-03-04T21:42:36.111Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Request joining group due to: consumer pro-actively leaving the group
-2025-03-04T21:42:36.696Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
-2025-03-04T21:42:36.712Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
-2025-03-04T21:42:36.713Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
-2025-03-04T21:42:36.717Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
-2025-03-04T21:42:36.937Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-calc-group-1 unregistered
-2025-03-04T21:42:36.958Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : calc-group: Consumer stopped
-2025-03-04T21:42:37.044Z  INFO 1 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-03-04T21:42:37.281Z  INFO 1 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-03-04T21:42:37.415Z  INFO 1 --- [SpringApplicationShutdownHook] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
-2025-03-04T21:42:37.455Z  INFO 1 --- [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
-2025-03-04T21:42:37.482Z  INFO 1 --- [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
-2025-03-04T21:42:37.498Z  INFO 1 --- [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
-2025-03-04T21:42:37.523Z  INFO 1 --- [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
-2025-03-04T21:42:37.810Z  INFO 1 --- [SpringApplicationShutdownHook] o.a.kafka.common.utils.AppInfoParser     : App info kafka.producer for producer-1 unregistered
-2025-03-04T21:47:03.602Z  INFO 1 --- [main] com.wit.rest.CalculatorApiApplication    : Starting CalculatorApiApplication v0.0.1-SNAPSHOT using Java 17.0.2 with PID 1 (/app/app.jar started by root in /app)
-2025-03-04T21:47:03.694Z DEBUG 1 --- [main] com.wit.rest.CalculatorApiApplication    : Running with Spring Boot v3.4.3, Spring v6.2.3
-2025-03-04T21:47:03.779Z  INFO 1 --- [main] com.wit.rest.CalculatorApiApplication    : No active profile set, falling back to 1 default profile: "default"
-2025-03-04T21:47:27.520Z  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
-2025-03-04T21:47:27.773Z  INFO 1 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-03-04T21:47:27.778Z  INFO 1 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-03-04T21:47:28.162Z  INFO 1 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-03-04T21:47:28.164Z  INFO 1 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 22770 ms
-2025-03-04T21:47:36.133Z  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
-2025-03-04T21:47:36.850Z  INFO 1 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
-	allow.auto.create.topics = true
-	auto.commit.interval.ms = 5000
-	auto.include.jmx.reporter = true
-	auto.offset.reset = latest
-	bootstrap.servers = [kafka:9092]
-	check.crcs = true
-	client.dns.lookup = use_all_dns_ips
-	client.id = consumer-calc-group-1
-	client.rack = 
-	connections.max.idle.ms = 540000
-	default.api.timeout.ms = 60000
-	enable.auto.commit = false
-	enable.metrics.push = true
-	exclude.internal.topics = true
-	fetch.max.bytes = 52428800
-	fetch.max.wait.ms = 500
-	fetch.min.bytes = 1
-	group.id = calc-group
-	group.instance.id = null
-	group.protocol = classic
-	group.remote.assignor = null
-	heartbeat.interval.ms = 3000
-	interceptor.classes = []
-	internal.leave.group.on.close = true
-	internal.throw.on.fetch.stable.offset.unsupported = false
-	isolation.level = read_uncommitted
-	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
-	max.partition.fetch.bytes = 1048576
-	max.poll.interval.ms = 300000
-	max.poll.records = 500
-	metadata.max.age.ms = 300000
-	metadata.recovery.strategy = none
-	metric.reporters = []
-	metrics.num.samples = 2
-	metrics.recording.level = INFO
-	metrics.sample.window.ms = 30000
-	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
-	receive.buffer.bytes = 65536
-	reconnect.backoff.max.ms = 1000
-	reconnect.backoff.ms = 50
-	request.timeout.ms = 30000
-	retry.backoff.max.ms = 1000
-	retry.backoff.ms = 100
-	sasl.client.callback.handler.class = null
-	sasl.jaas.config = null
-	sasl.kerberos.kinit.cmd = /usr/bin/kinit
-	sasl.kerberos.min.time.before.relogin = 60000
-	sasl.kerberos.service.name = null
-	sasl.kerberos.ticket.renew.jitter = 0.05
-	sasl.kerberos.ticket.renew.window.factor = 0.8
-	sasl.login.callback.handler.class = null
-	sasl.login.class = null
-	sasl.login.connect.timeout.ms = null
-	sasl.login.read.timeout.ms = null
-	sasl.login.refresh.buffer.seconds = 300
-	sasl.login.refresh.min.period.seconds = 60
-	sasl.login.refresh.window.factor = 0.8
-	sasl.login.refresh.window.jitter = 0.05
-	sasl.login.retry.backoff.max.ms = 10000
-	sasl.login.retry.backoff.ms = 100
-	sasl.mechanism = GSSAPI
-	sasl.oauthbearer.clock.skew.seconds = 30
-	sasl.oauthbearer.expected.audience = null
-	sasl.oauthbearer.expected.issuer = null
-	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
-	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
-	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
-	sasl.oauthbearer.jwks.endpoint.url = null
-	sasl.oauthbearer.scope.claim.name = scope
-	sasl.oauthbearer.sub.claim.name = sub
-	sasl.oauthbearer.token.endpoint.url = null
-	security.protocol = PLAINTEXT
-	security.providers = null
-	send.buffer.bytes = 131072
-	session.timeout.ms = 45000
-	socket.connection.setup.timeout.max.ms = 30000
-	socket.connection.setup.timeout.ms = 10000
-	ssl.cipher.suites = null
-	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
-	ssl.endpoint.identification.algorithm = https
-	ssl.engine.factory.class = null
-	ssl.key.password = null
-	ssl.keymanager.algorithm = SunX509
-	ssl.keystore.certificate.chain = null
-	ssl.keystore.key = null
-	ssl.keystore.location = null
-	ssl.keystore.password = null
-	ssl.keystore.type = JKS
-	ssl.protocol = TLSv1.3
-	ssl.provider = null
-	ssl.secure.random.implementation = null
-	ssl.trustmanager.algorithm = PKIX
-	ssl.truststore.certificates = null
-	ssl.truststore.location = null
-	ssl.truststore.password = null
-	ssl.truststore.type = JKS
-	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
-
-2025-03-04T21:47:37.722Z  INFO 1 --- [main] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
-2025-03-04T21:47:41.722Z  INFO 1 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.8.1
-2025-03-04T21:47:41.743Z  INFO 1 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 70d6ff42debf7e17
-2025-03-04T21:47:41.775Z  INFO 1 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1741124861472
-2025-03-04T21:47:41.900Z  INFO 1 --- [main] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Subscribed to topic(s): calc-requests
-2025-03-04T21:47:42.678Z  INFO 1 --- [main] com.wit.rest.CalculatorApiApplication    : Started CalculatorApiApplication in 53.744 seconds (process running for 64.668)
-2025-03-04T21:47:46.430Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T21:47:46.529Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T21:47:46.579Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T21:47:46.799Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T21:47:46.853Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T21:47:46.884Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T21:47:46.962Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T21:47:47.017Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T21:47:47.033Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T21:47:47.185Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T21:47:47.195Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T21:47:47.227Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T21:47:47.612Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T21:47:47.619Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T21:47:47.631Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T21:47:48.389Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T21:47:48.423Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T21:47:48.438Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T21:47:49.415Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T21:47:49.427Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T21:47:49.439Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T21:47:50.451Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T21:47:50.496Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T21:47:50.526Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T21:47:51.299Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T21:47:51.710Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T21:47:51.715Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T21:47:52.662Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T21:47:52.832Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T21:47:52.842Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T21:47:53.636Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T21:47:53.662Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T21:47:53.688Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T21:47:54.544Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T21:47:54.571Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T21:47:54.591Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T21:47:55.546Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T21:47:55.571Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T21:47:55.610Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T21:47:56.555Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T21:47:56.563Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T21:47:56.574Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T21:47:57.581Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T21:47:57.702Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T21:47:57.715Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T21:47:58.594Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T21:47:58.608Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T21:47:58.639Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T21:47:59.488Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T21:47:59.506Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T21:47:59.538Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T21:48:00.517Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T21:48:00.538Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T21:48:00.548Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T21:48:01.536Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T21:48:01.562Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T21:48:01.584Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T21:48:02.538Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T21:48:02.565Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T21:48:02.583Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T21:48:03.570Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T21:48:03.595Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T21:48:03.599Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T21:48:04.580Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T21:48:04.589Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T21:48:04.597Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T21:48:05.564Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T21:48:05.601Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T21:48:05.622Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T21:48:06.526Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T21:48:06.531Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T21:48:06.546Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T21:48:07.466Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T21:48:07.470Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T21:48:07.477Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T21:48:08.323Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T21:48:08.345Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T21:48:08.349Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T21:48:09.373Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T21:48:09.389Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T21:48:09.407Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T21:48:10.424Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T21:48:10.469Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T21:48:10.486Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T21:48:11.403Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T21:48:11.432Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T21:48:11.438Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T21:48:12.454Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T21:48:12.472Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T21:48:12.487Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T21:48:13.433Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T21:48:13.446Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T21:48:13.485Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T21:48:14.393Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T21:48:14.411Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T21:48:14.445Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T21:48:15.298Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T21:48:15.313Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T21:48:15.319Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T21:48:16.375Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T21:48:16.391Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T21:48:16.407Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T21:48:17.248Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T21:48:17.261Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T21:48:17.268Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T21:48:18.289Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T21:48:18.352Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T21:48:18.365Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T21:48:19.184Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T21:48:19.247Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T21:48:19.268Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T21:48:20.233Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T21:48:20.253Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T21:48:20.270Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T21:48:28.451Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Error while fetching metadata with correlation id 3 : {calc-requests=LEADER_NOT_AVAILABLE}
-2025-03-04T21:48:28.482Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Cluster ID: cFRT4VxfT_K2nnHdjQZ3oQ
-2025-03-04T21:48:28.865Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Error while fetching metadata with correlation id 6 : {calc-requests=LEADER_NOT_AVAILABLE}
-2025-03-04T21:48:29.216Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Error while fetching metadata with correlation id 8 : {calc-requests=LEADER_NOT_AVAILABLE}
-2025-03-04T21:48:29.700Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Error while fetching metadata with correlation id 10 : {calc-requests=UNKNOWN_TOPIC_OR_PARTITION}
-2025-03-04T21:48:30.915Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Error while fetching metadata with correlation id 12 : {calc-requests=LEADER_NOT_AVAILABLE}
-2025-03-04T21:48:32.062Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Error while fetching metadata with correlation id 14 : {calc-requests=LEADER_NOT_AVAILABLE}
-2025-03-04T21:48:33.188Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Error while fetching metadata with correlation id 17 : {calc-requests=LEADER_NOT_AVAILABLE}
-2025-03-04T21:48:34.133Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Error while fetching metadata with correlation id 19 : {calc-requests=LEADER_NOT_AVAILABLE}
-2025-03-04T21:48:35.174Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Error while fetching metadata with correlation id 21 : {calc-requests=UNKNOWN_TOPIC_OR_PARTITION}
-2025-03-04T21:48:36.184Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Error while fetching metadata with correlation id 23 : {calc-requests=LEADER_NOT_AVAILABLE}
-2025-03-04T21:48:37.315Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Error while fetching metadata with correlation id 25 : {calc-requests=UNKNOWN_TOPIC_OR_PARTITION}
-2025-03-04T21:48:38.270Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Error while fetching metadata with correlation id 28 : {calc-requests=LEADER_NOT_AVAILABLE}
-2025-03-04T21:48:39.288Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Error while fetching metadata with correlation id 30 : {calc-requests=LEADER_NOT_AVAILABLE}
-2025-03-04T21:48:40.289Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Error while fetching metadata with correlation id 32 : {calc-requests=LEADER_NOT_AVAILABLE}
-2025-03-04T21:48:41.391Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Error while fetching metadata with correlation id 34 : {calc-requests=LEADER_NOT_AVAILABLE}
-2025-03-04T21:48:42.442Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Error while fetching metadata with correlation id 36 : {calc-requests=LEADER_NOT_AVAILABLE}
-2025-03-04T21:48:43.440Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Error while fetching metadata with correlation id 39 : {calc-requests=LEADER_NOT_AVAILABLE}
-2025-03-04T21:48:44.510Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Error while fetching metadata with correlation id 41 : {calc-requests=LEADER_NOT_AVAILABLE}
-2025-03-04T21:48:45.570Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Discovered group coordinator kafka:9092 (id: 2147483646 rack: null)
-2025-03-04T21:48:45.607Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] (Re-)joining group
-2025-03-04T21:48:45.922Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Request joining group due to: need to re-join with the given member-id: consumer-calc-group-1-9ab7d15b-735a-4423-90d5-37f872822a66
-2025-03-04T21:48:45.930Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] (Re-)joining group
-2025-03-04T21:48:51.582Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Successfully joined group with generation Generation{generationId=1, memberId='consumer-calc-group-1-9ab7d15b-735a-4423-90d5-37f872822a66', protocol='range'}
-2025-03-04T21:48:52.273Z  INFO 1 --- [kafka-coordinator-heartbeat-thread | calc-group] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Successfully synced group in generation Generation{generationId=1, memberId='consumer-calc-group-1-9ab7d15b-735a-4423-90d5-37f872822a66', protocol='range'}
-2025-03-04T21:48:52.323Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Notifying assignor about the new Assignment(partitions=[])
-2025-03-04T21:48:52.331Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Adding newly assigned partitions: 
-2025-03-04T21:48:52.367Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : calc-group: partitions assigned: []
-2025-03-04T21:49:46.024Z  INFO 1 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-03-04T21:49:46.030Z  INFO 1 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-03-04T21:49:46.132Z  INFO 1 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 98 ms
-2025-03-04T21:49:46.649Z  INFO 1 --- [http-nio-8081-exec-1] com.wit.calculator.CalculatorService     : Calculando multiplicação: 21 * 17
-2025-03-04T21:49:46.658Z  INFO 1 --- [http-nio-8081-exec-1] com.wit.rest.CalculatorController        : UUID=62bb36a3-c917-4e9c-8705-bfa8d22e6a07 | Operação=multiplication | a=21 | b=17 | Resultado=357
-2025-03-04T21:49:46.832Z  INFO 1 --- [http-nio-8081-exec-1] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
-	acks = -1
-	auto.include.jmx.reporter = true
-	batch.size = 16384
-	bootstrap.servers = [kafka:9092]
-	buffer.memory = 33554432
-	client.dns.lookup = use_all_dns_ips
-	client.id = producer-1
-	compression.gzip.level = -1
-	compression.lz4.level = 9
-	compression.type = none
-	compression.zstd.level = 3
-	connections.max.idle.ms = 540000
-	delivery.timeout.ms = 120000
-	enable.idempotence = true
-	enable.metrics.push = true
-	interceptor.classes = []
-	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
-	linger.ms = 0
-	max.block.ms = 60000
-	max.in.flight.requests.per.connection = 5
-	max.request.size = 1048576
-	metadata.max.age.ms = 300000
-	metadata.max.idle.ms = 300000
-	metadata.recovery.strategy = none
-	metric.reporters = []
-	metrics.num.samples = 2
-	metrics.recording.level = INFO
-	metrics.sample.window.ms = 30000
-	partitioner.adaptive.partitioning.enable = true
-	partitioner.availability.timeout.ms = 0
-	partitioner.class = null
-	partitioner.ignore.keys = false
-	receive.buffer.bytes = 32768
-	reconnect.backoff.max.ms = 1000
-	reconnect.backoff.ms = 50
-	request.timeout.ms = 30000
-	retries = 2147483647
-	retry.backoff.max.ms = 1000
-	retry.backoff.ms = 100
-	sasl.client.callback.handler.class = null
-	sasl.jaas.config = null
-	sasl.kerberos.kinit.cmd = /usr/bin/kinit
-	sasl.kerberos.min.time.before.relogin = 60000
-	sasl.kerberos.service.name = null
-	sasl.kerberos.ticket.renew.jitter = 0.05
-	sasl.kerberos.ticket.renew.window.factor = 0.8
-	sasl.login.callback.handler.class = null
-	sasl.login.class = null
-	sasl.login.connect.timeout.ms = null
-	sasl.login.read.timeout.ms = null
-	sasl.login.refresh.buffer.seconds = 300
-	sasl.login.refresh.min.period.seconds = 60
-	sasl.login.refresh.window.factor = 0.8
-	sasl.login.refresh.window.jitter = 0.05
-	sasl.login.retry.backoff.max.ms = 10000
-	sasl.login.retry.backoff.ms = 100
-	sasl.mechanism = GSSAPI
-	sasl.oauthbearer.clock.skew.seconds = 30
-	sasl.oauthbearer.expected.audience = null
-	sasl.oauthbearer.expected.issuer = null
-	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
-	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
-	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
-	sasl.oauthbearer.jwks.endpoint.url = null
-	sasl.oauthbearer.scope.claim.name = scope
-	sasl.oauthbearer.sub.claim.name = sub
-	sasl.oauthbearer.token.endpoint.url = null
-	security.protocol = PLAINTEXT
-	security.providers = null
-	send.buffer.bytes = 131072
-	socket.connection.setup.timeout.max.ms = 30000
-	socket.connection.setup.timeout.ms = 10000
-	ssl.cipher.suites = null
-	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
-	ssl.endpoint.identification.algorithm = https
-	ssl.engine.factory.class = null
-	ssl.key.password = null
-	ssl.keymanager.algorithm = SunX509
-	ssl.keystore.certificate.chain = null
-	ssl.keystore.key = null
-	ssl.keystore.location = null
-	ssl.keystore.password = null
-	ssl.keystore.type = JKS
-	ssl.protocol = TLSv1.3
-	ssl.provider = null
-	ssl.secure.random.implementation = null
-	ssl.trustmanager.algorithm = PKIX
-	ssl.truststore.certificates = null
-	ssl.truststore.location = null
-	ssl.truststore.password = null
-	ssl.truststore.type = JKS
-	transaction.timeout.ms = 60000
-	transactional.id = null
-	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
-
-2025-03-04T21:49:46.849Z  INFO 1 --- [http-nio-8081-exec-1] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
-2025-03-04T21:49:47.022Z  INFO 1 --- [http-nio-8081-exec-1] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Instantiated an idempotent producer.
-2025-03-04T21:49:47.203Z  INFO 1 --- [http-nio-8081-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.8.1
-2025-03-04T21:49:47.215Z  INFO 1 --- [http-nio-8081-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 70d6ff42debf7e17
-2025-03-04T21:49:47.220Z  INFO 1 --- [http-nio-8081-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1741124987203
-2025-03-04T21:49:47.328Z  INFO 1 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: cFRT4VxfT_K2nnHdjQZ3oQ
-2025-03-04T21:49:47.806Z  INFO 1 --- [kafka-producer-network-thread | producer-1] o.a.k.c.p.internals.TransactionManager   : [Producer clientId=producer-1] ProducerId set to 0 with epoch 0
-2025-03-04T21:50:11.360Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Member consumer-calc-group-1-9ab7d15b-735a-4423-90d5-37f872822a66 sending LeaveGroup request to coordinator kafka:9092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
-2025-03-04T21:50:11.398Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Resetting generation and member id due to: consumer pro-actively leaving the group
-2025-03-04T21:50:11.402Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Request joining group due to: consumer pro-actively leaving the group
-2025-03-04T21:50:11.404Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Unsubscribed all topics or patterns and assigned partitions
-2025-03-04T21:50:11.438Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Resetting generation and member id due to: consumer pro-actively leaving the group
-2025-03-04T21:50:11.440Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Request joining group due to: consumer pro-actively leaving the group
-2025-03-04T21:50:11.496Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
-2025-03-04T21:50:11.498Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
-2025-03-04T21:50:11.513Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
-2025-03-04T21:50:11.514Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
-2025-03-04T21:50:11.576Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-calc-group-1 unregistered
-2025-03-04T21:50:11.594Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : calc-group: Consumer stopped
-2025-03-04T21:50:11.611Z  INFO 1 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-03-04T21:50:11.653Z  INFO 1 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-03-04T21:50:11.686Z  INFO 1 --- [SpringApplicationShutdownHook] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
-2025-03-04T21:50:11.722Z  INFO 1 --- [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
-2025-03-04T21:50:11.729Z  INFO 1 --- [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
-2025-03-04T21:50:11.734Z  INFO 1 --- [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
-2025-03-04T21:50:11.743Z  INFO 1 --- [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
-2025-03-04T21:50:11.749Z  INFO 1 --- [SpringApplicationShutdownHook] o.a.kafka.common.utils.AppInfoParser     : App info kafka.producer for producer-1 unregistered
-2025-03-04T22:37:33.796Z  INFO 1 --- [main] com.wit.rest.CalculatorApiApplication    : Starting CalculatorApiApplication v0.0.1-SNAPSHOT using Java 17.0.2 with PID 1 (/app/app.jar started by root in /app)
-2025-03-04T22:37:33.873Z DEBUG 1 --- [main] com.wit.rest.CalculatorApiApplication    : Running with Spring Boot v3.4.3, Spring v6.2.3
-2025-03-04T22:37:33.878Z  INFO 1 --- [main] com.wit.rest.CalculatorApiApplication    : No active profile set, falling back to 1 default profile: "default"
-2025-03-04T22:37:48.061Z  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
-2025-03-04T22:37:48.219Z  INFO 1 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-03-04T22:37:48.231Z  INFO 1 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-03-04T22:37:48.489Z  INFO 1 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-03-04T22:37:48.511Z  INFO 1 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 13555 ms
-2025-03-04T22:37:53.178Z  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
-2025-03-04T22:37:53.663Z  INFO 1 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
-	allow.auto.create.topics = true
-	auto.commit.interval.ms = 5000
-	auto.include.jmx.reporter = true
-	auto.offset.reset = latest
-	bootstrap.servers = [kafka:9092]
-	check.crcs = true
-	client.dns.lookup = use_all_dns_ips
-	client.id = consumer-calc-group-1
-	client.rack = 
-	connections.max.idle.ms = 540000
-	default.api.timeout.ms = 60000
-	enable.auto.commit = false
-	enable.metrics.push = true
-	exclude.internal.topics = true
-	fetch.max.bytes = 52428800
-	fetch.max.wait.ms = 500
-	fetch.min.bytes = 1
-	group.id = calc-group
-	group.instance.id = null
-	group.protocol = classic
-	group.remote.assignor = null
-	heartbeat.interval.ms = 3000
-	interceptor.classes = []
-	internal.leave.group.on.close = true
-	internal.throw.on.fetch.stable.offset.unsupported = false
-	isolation.level = read_uncommitted
-	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
-	max.partition.fetch.bytes = 1048576
-	max.poll.interval.ms = 300000
-	max.poll.records = 500
-	metadata.max.age.ms = 300000
-	metadata.recovery.strategy = none
-	metric.reporters = []
-	metrics.num.samples = 2
-	metrics.recording.level = INFO
-	metrics.sample.window.ms = 30000
-	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
-	receive.buffer.bytes = 65536
-	reconnect.backoff.max.ms = 1000
-	reconnect.backoff.ms = 50
-	request.timeout.ms = 30000
-	retry.backoff.max.ms = 1000
-	retry.backoff.ms = 100
-	sasl.client.callback.handler.class = null
-	sasl.jaas.config = null
-	sasl.kerberos.kinit.cmd = /usr/bin/kinit
-	sasl.kerberos.min.time.before.relogin = 60000
-	sasl.kerberos.service.name = null
-	sasl.kerberos.ticket.renew.jitter = 0.05
-	sasl.kerberos.ticket.renew.window.factor = 0.8
-	sasl.login.callback.handler.class = null
-	sasl.login.class = null
-	sasl.login.connect.timeout.ms = null
-	sasl.login.read.timeout.ms = null
-	sasl.login.refresh.buffer.seconds = 300
-	sasl.login.refresh.min.period.seconds = 60
-	sasl.login.refresh.window.factor = 0.8
-	sasl.login.refresh.window.jitter = 0.05
-	sasl.login.retry.backoff.max.ms = 10000
-	sasl.login.retry.backoff.ms = 100
-	sasl.mechanism = GSSAPI
-	sasl.oauthbearer.clock.skew.seconds = 30
-	sasl.oauthbearer.expected.audience = null
-	sasl.oauthbearer.expected.issuer = null
-	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
-	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
-	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
-	sasl.oauthbearer.jwks.endpoint.url = null
-	sasl.oauthbearer.scope.claim.name = scope
-	sasl.oauthbearer.sub.claim.name = sub
-	sasl.oauthbearer.token.endpoint.url = null
-	security.protocol = PLAINTEXT
-	security.providers = null
-	send.buffer.bytes = 131072
-	session.timeout.ms = 45000
-	socket.connection.setup.timeout.max.ms = 30000
-	socket.connection.setup.timeout.ms = 10000
-	ssl.cipher.suites = null
-	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
-	ssl.endpoint.identification.algorithm = https
-	ssl.engine.factory.class = null
-	ssl.key.password = null
-	ssl.keymanager.algorithm = SunX509
-	ssl.keystore.certificate.chain = null
-	ssl.keystore.key = null
-	ssl.keystore.location = null
-	ssl.keystore.password = null
-	ssl.keystore.type = JKS
-	ssl.protocol = TLSv1.3
-	ssl.provider = null
-	ssl.secure.random.implementation = null
-	ssl.trustmanager.algorithm = PKIX
-	ssl.truststore.certificates = null
-	ssl.truststore.location = null
-	ssl.truststore.password = null
-	ssl.truststore.type = JKS
-	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
-
-2025-03-04T22:37:54.495Z  INFO 1 --- [main] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
-2025-03-04T22:37:57.302Z  INFO 1 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.8.1
-2025-03-04T22:37:57.349Z  INFO 1 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 70d6ff42debf7e17
-2025-03-04T22:37:57.381Z  INFO 1 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1741127877286
-2025-03-04T22:37:57.432Z  INFO 1 --- [main] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Subscribed to topic(s): calc-requests
-2025-03-04T22:37:57.779Z  INFO 1 --- [main] com.wit.rest.CalculatorApiApplication    : Started CalculatorApiApplication in 31.655 seconds (process running for 37.9)
-2025-03-04T22:38:02.245Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T22:38:02.283Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T22:38:02.329Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T22:38:02.746Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T22:38:02.818Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T22:38:02.849Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T22:38:02.925Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T22:38:02.943Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T22:38:02.959Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T22:38:03.190Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T22:38:03.239Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T22:38:03.253Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T22:38:03.587Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T22:38:03.617Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T22:38:03.633Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T22:38:04.365Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T22:38:04.394Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T22:38:04.396Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T22:38:05.309Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T22:38:05.325Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T22:38:05.358Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T22:38:06.352Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T22:38:06.359Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T22:38:06.375Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T22:38:07.432Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T22:38:07.464Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T22:38:07.534Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T22:38:08.434Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T22:38:08.496Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T22:38:08.566Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T22:38:09.438Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T22:38:09.452Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T22:38:09.468Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T22:38:10.330Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T22:38:10.338Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T22:38:10.343Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T22:38:11.380Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T22:38:11.397Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T22:38:11.407Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T22:38:12.382Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T22:38:12.404Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T22:38:12.411Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T22:38:13.250Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T22:38:13.281Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T22:38:13.295Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T22:38:14.159Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T22:38:14.163Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T22:38:14.204Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T22:38:15.031Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T22:38:15.044Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Connection to node -1 (kafka/172.18.0.3:9092) could not be established. Node may not be available.
-2025-03-04T22:38:15.060Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Bootstrap broker kafka:9092 (id: -1 rack: null) disconnected
-2025-03-04T22:38:18.698Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Error while fetching metadata with correlation id 2 : {calc-requests=UNKNOWN_TOPIC_OR_PARTITION}
-2025-03-04T22:38:18.727Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Cluster ID: cFRT4VxfT_K2nnHdjQZ3oQ
-2025-03-04T22:38:19.128Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Error while fetching metadata with correlation id 6 : {calc-requests=LEADER_NOT_AVAILABLE}
-2025-03-04T22:38:19.605Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Error while fetching metadata with correlation id 8 : {calc-requests=LEADER_NOT_AVAILABLE}
-2025-03-04T22:38:20.252Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Error while fetching metadata with correlation id 10 : {calc-requests=LEADER_NOT_AVAILABLE}
-2025-03-04T22:38:21.090Z  WARN 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Error while fetching metadata with correlation id 12 : {calc-requests=LEADER_NOT_AVAILABLE}
-2025-03-04T22:38:22.184Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Discovered group coordinator kafka:9092 (id: 2147483646 rack: null)
-2025-03-04T22:38:22.241Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] (Re-)joining group
-2025-03-04T22:38:22.587Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Request joining group due to: need to re-join with the given member-id: consumer-calc-group-1-9ec28a38-6edd-4ed7-95da-c8d922fbb055
-2025-03-04T22:38:22.601Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] (Re-)joining group
-2025-03-04T22:38:25.667Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Successfully joined group with generation Generation{generationId=3, memberId='consumer-calc-group-1-9ec28a38-6edd-4ed7-95da-c8d922fbb055', protocol='range'}
-2025-03-04T22:38:25.717Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Finished assignment for group at generation 3: {consumer-calc-group-1-2320209e-a9e8-410b-9c6c-0ab0122ef794=Assignment(partitions=[calc-requests-0]), consumer-calc-group-1-9ec28a38-6edd-4ed7-95da-c8d922fbb055=Assignment(partitions=[])}
-2025-03-04T22:38:25.934Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Successfully synced group in generation Generation{generationId=3, memberId='consumer-calc-group-1-9ec28a38-6edd-4ed7-95da-c8d922fbb055', protocol='range'}
-2025-03-04T22:38:25.974Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Notifying assignor about the new Assignment(partitions=[])
-2025-03-04T22:38:25.980Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Adding newly assigned partitions: 
-2025-03-04T22:38:25.992Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : calc-group: partitions assigned: []
-2025-03-04T22:47:18.980Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T22:57:18.572Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.NetworkClient   : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Node -1 disconnected.
-2025-03-04T23:11:44.229Z  INFO 1 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-03-04T23:11:44.265Z  INFO 1 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-03-04T23:11:44.408Z  INFO 1 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 139 ms
-2025-03-04T23:11:45.072Z  INFO 1 --- [http-nio-8081-exec-1] com.wit.calculator.CalculatorService     : Calculando multiplicação: 21 * 17
-2025-03-04T23:11:45.079Z  INFO 1 --- [http-nio-8081-exec-1] com.wit.rest.CalculatorController        : UUID=8a61f97b-4acb-4643-b1eb-c98c4488ebb7 | Operação=multiplication | a=21 | b=17 | Resultado=357
-2025-03-04T23:11:45.260Z  INFO 1 --- [http-nio-8081-exec-1] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
-	acks = -1
-	auto.include.jmx.reporter = true
-	batch.size = 16384
-	bootstrap.servers = [kafka:9092]
-	buffer.memory = 33554432
-	client.dns.lookup = use_all_dns_ips
-	client.id = producer-1
-	compression.gzip.level = -1
-	compression.lz4.level = 9
-	compression.type = none
-	compression.zstd.level = 3
-	connections.max.idle.ms = 540000
-	delivery.timeout.ms = 120000
-	enable.idempotence = true
-	enable.metrics.push = true
-	interceptor.classes = []
-	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
-	linger.ms = 0
-	max.block.ms = 60000
-	max.in.flight.requests.per.connection = 5
-	max.request.size = 1048576
-	metadata.max.age.ms = 300000
-	metadata.max.idle.ms = 300000
-	metadata.recovery.strategy = none
-	metric.reporters = []
-	metrics.num.samples = 2
-	metrics.recording.level = INFO
-	metrics.sample.window.ms = 30000
-	partitioner.adaptive.partitioning.enable = true
-	partitioner.availability.timeout.ms = 0
-	partitioner.class = null
-	partitioner.ignore.keys = false
-	receive.buffer.bytes = 32768
-	reconnect.backoff.max.ms = 1000
-	reconnect.backoff.ms = 50
-	request.timeout.ms = 30000
-	retries = 2147483647
-	retry.backoff.max.ms = 1000
-	retry.backoff.ms = 100
-	sasl.client.callback.handler.class = null
-	sasl.jaas.config = null
-	sasl.kerberos.kinit.cmd = /usr/bin/kinit
-	sasl.kerberos.min.time.before.relogin = 60000
-	sasl.kerberos.service.name = null
-	sasl.kerberos.ticket.renew.jitter = 0.05
-	sasl.kerberos.ticket.renew.window.factor = 0.8
-	sasl.login.callback.handler.class = null
-	sasl.login.class = null
-	sasl.login.connect.timeout.ms = null
-	sasl.login.read.timeout.ms = null
-	sasl.login.refresh.buffer.seconds = 300
-	sasl.login.refresh.min.period.seconds = 60
-	sasl.login.refresh.window.factor = 0.8
-	sasl.login.refresh.window.jitter = 0.05
-	sasl.login.retry.backoff.max.ms = 10000
-	sasl.login.retry.backoff.ms = 100
-	sasl.mechanism = GSSAPI
-	sasl.oauthbearer.clock.skew.seconds = 30
-	sasl.oauthbearer.expected.audience = null
-	sasl.oauthbearer.expected.issuer = null
-	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
-	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
-	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
-	sasl.oauthbearer.jwks.endpoint.url = null
-	sasl.oauthbearer.scope.claim.name = scope
-	sasl.oauthbearer.sub.claim.name = sub
-	sasl.oauthbearer.token.endpoint.url = null
-	security.protocol = PLAINTEXT
-	security.providers = null
-	send.buffer.bytes = 131072
-	socket.connection.setup.timeout.max.ms = 30000
-	socket.connection.setup.timeout.ms = 10000
-	ssl.cipher.suites = null
-	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
-	ssl.endpoint.identification.algorithm = https
-	ssl.engine.factory.class = null
-	ssl.key.password = null
-	ssl.keymanager.algorithm = SunX509
-	ssl.keystore.certificate.chain = null
-	ssl.keystore.key = null
-	ssl.keystore.location = null
-	ssl.keystore.password = null
-	ssl.keystore.type = JKS
-	ssl.protocol = TLSv1.3
-	ssl.provider = null
-	ssl.secure.random.implementation = null
-	ssl.trustmanager.algorithm = PKIX
-	ssl.truststore.certificates = null
-	ssl.truststore.location = null
-	ssl.truststore.password = null
-	ssl.truststore.type = JKS
-	transaction.timeout.ms = 60000
-	transactional.id = null
-	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
-
-2025-03-04T23:11:45.284Z  INFO 1 --- [http-nio-8081-exec-1] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
-2025-03-04T23:11:45.602Z  INFO 1 --- [http-nio-8081-exec-1] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Instantiated an idempotent producer.
-2025-03-04T23:11:45.928Z  INFO 1 --- [http-nio-8081-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.8.1
-2025-03-04T23:11:45.944Z  INFO 1 --- [http-nio-8081-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 70d6ff42debf7e17
-2025-03-04T23:11:45.946Z  INFO 1 --- [http-nio-8081-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1741129905923
-2025-03-04T23:11:46.108Z  INFO 1 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: cFRT4VxfT_K2nnHdjQZ3oQ
-2025-03-04T23:11:47.268Z  INFO 1 --- [kafka-producer-network-thread | producer-1] o.a.k.c.p.internals.TransactionManager   : [Producer clientId=producer-1] ProducerId set to 1000 with epoch 0
-2025-03-04T23:12:40.701Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Member consumer-calc-group-1-9ec28a38-6edd-4ed7-95da-c8d922fbb055 sending LeaveGroup request to coordinator kafka:9092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
-2025-03-04T23:12:40.710Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Resetting generation and member id due to: consumer pro-actively leaving the group
-2025-03-04T23:12:40.714Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Request joining group due to: consumer pro-actively leaving the group
-2025-03-04T23:12:40.719Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Unsubscribed all topics or patterns and assigned partitions
-2025-03-04T23:12:40.756Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Resetting generation and member id due to: consumer pro-actively leaving the group
-2025-03-04T23:12:40.760Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Request joining group due to: consumer pro-actively leaving the group
-2025-03-04T23:12:40.865Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
-2025-03-04T23:12:40.887Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
-2025-03-04T23:12:40.891Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
-2025-03-04T23:12:40.895Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
-2025-03-04T23:12:40.988Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-calc-group-1 unregistered
-2025-03-04T23:12:41.008Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : calc-group: Consumer stopped
-2025-03-04T23:12:41.041Z  INFO 1 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-03-04T23:12:41.159Z  INFO 1 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-03-04T23:12:41.197Z  INFO 1 --- [SpringApplicationShutdownHook] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
-2025-03-04T23:12:41.243Z  INFO 1 --- [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
-2025-03-04T23:12:41.255Z  INFO 1 --- [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
-2025-03-04T23:12:41.262Z  INFO 1 --- [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
-2025-03-04T23:12:41.270Z  INFO 1 --- [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
-2025-03-04T23:12:41.278Z  INFO 1 --- [SpringApplicationShutdownHook] o.a.kafka.common.utils.AppInfoParser     : App info kafka.producer for producer-1 unregistered
+2025-03-05T00:41:11.247Z  INFO 1 --- [http-nio-8081-exec-2] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2025-03-05T00:41:11.318Z  INFO 1 --- [http-nio-8081-exec-2] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Instantiated an idempotent producer.
+2025-03-05T00:41:11.380Z  INFO 1 --- [http-nio-8081-exec-2] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.8.1
+2025-03-05T00:41:11.381Z  INFO 1 --- [http-nio-8081-exec-2] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 70d6ff42debf7e17
+2025-03-05T00:41:11.391Z  INFO 1 --- [http-nio-8081-exec-2] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1741135271380
+2025-03-05T00:41:11.414Z  INFO 1 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: cFRT4VxfT_K2nnHdjQZ3oQ
+2025-03-05T00:41:11.548Z  INFO 1 --- [kafka-producer-network-thread | producer-1] o.a.k.c.p.internals.TransactionManager   : [Producer clientId=producer-1] ProducerId set to 2000 with epoch 0
+2025-03-05T00:41:12.723Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.wit.rest.kafka.OperationConsumer     : UUID=4dae2b59-ac12-47f0-bd04-0a8bbfe123e1 | Mensagem recebida via Kafka: Operação=multiplication | a=21 | b=17 | Resultado=357
+2025-03-05T00:41:15.472Z  INFO 1 --- [http-nio-8081-exec-3] com.wit.calculator.CalculatorService     : Calculando multiplicação: 21 * 17
+2025-03-05T00:41:15.474Z  INFO 1 --- [http-nio-8081-exec-3] com.wit.rest.CalculatorController        : UUID=6e290673-08a2-4f64-b14f-a5adc948dbff | Operação=multiplication | a=21 | b=17 | Resultado=357
+2025-03-05T00:41:15.549Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.wit.rest.kafka.OperationConsumer     : UUID=6e290673-08a2-4f64-b14f-a5adc948dbff | Mensagem recebida via Kafka: Operação=multiplication | a=21 | b=17 | Resultado=357
+2025-03-05T00:41:16.400Z  INFO 1 --- [http-nio-8081-exec-4] com.wit.calculator.CalculatorService     : Calculando multiplicação: 21 * 17
+2025-03-05T00:41:16.401Z  INFO 1 --- [http-nio-8081-exec-4] com.wit.rest.CalculatorController        : UUID=a6911852-d18f-4865-bed9-ff28263fa6d2 | Operação=multiplication | a=21 | b=17 | Resultado=357
+2025-03-05T00:41:16.436Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.wit.rest.kafka.OperationConsumer     : UUID=a6911852-d18f-4865-bed9-ff28263fa6d2 | Mensagem recebida via Kafka: Operação=multiplication | a=21 | b=17 | Resultado=357
+2025-03-05T00:41:17.367Z  INFO 1 --- [http-nio-8081-exec-6] com.wit.calculator.CalculatorService     : Calculando multiplicação: 21 * 17
+2025-03-05T00:41:17.382Z  INFO 1 --- [http-nio-8081-exec-6] com.wit.rest.CalculatorController        : UUID=6522fd3d-a401-4431-bb85-18958963a3ea | Operação=multiplication | a=21 | b=17 | Resultado=357
+2025-03-05T00:41:17.481Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.wit.rest.kafka.OperationConsumer     : UUID=6522fd3d-a401-4431-bb85-18958963a3ea | Mensagem recebida via Kafka: Operação=multiplication | a=21 | b=17 | Resultado=357
+2025-03-05T00:42:28.826Z  INFO 1 --- [http-nio-8081-exec-7] com.wit.calculator.CalculatorService     : Calculando multiplicação: 21 * 17
+2025-03-05T00:42:28.832Z  INFO 1 --- [http-nio-8081-exec-7] com.wit.rest.CalculatorController        : UUID=9067e264-158d-40d6-a51f-e595ee12334b | Operação=multiplication | a=21 | b=17 | Resultado=357
+2025-03-05T00:42:28.870Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.wit.rest.kafka.OperationConsumer     : UUID=9067e264-158d-40d6-a51f-e595ee12334b | Mensagem recebida via Kafka: Operação=multiplication | a=21 | b=17 | Resultado=357
+2025-03-05T00:42:32.673Z  INFO 1 --- [http-nio-8081-exec-8] com.wit.calculator.CalculatorService     : Calculando multiplicação: 21 * 17
+2025-03-05T00:42:32.676Z  INFO 1 --- [http-nio-8081-exec-8] com.wit.rest.CalculatorController        : UUID=1c349855-e67c-4f44-a1e8-b1d3cf4ebd8c | Operação=multiplication | a=21 | b=17 | Resultado=357
+2025-03-05T00:42:32.698Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.wit.rest.kafka.OperationConsumer     : UUID=1c349855-e67c-4f44-a1e8-b1d3cf4ebd8c | Mensagem recebida via Kafka: Operação=multiplication | a=21 | b=17 | Resultado=357
+2025-03-05T00:42:39.873Z  INFO 1 --- [http-nio-8081-exec-9] com.wit.calculator.CalculatorService     : Calculando multiplicação: 21 * 17
+2025-03-05T00:42:39.877Z  INFO 1 --- [http-nio-8081-exec-9] com.wit.rest.CalculatorController        : UUID=5b1019ba-ad6e-4dbe-ba7f-b8f5c2efe6af | Operação=multiplication | a=21 | b=17 | Resultado=357
+2025-03-05T00:42:39.897Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.wit.rest.kafka.OperationConsumer     : UUID=5b1019ba-ad6e-4dbe-ba7f-b8f5c2efe6af | Mensagem recebida via Kafka: Operação=multiplication | a=21 | b=17 | Resultado=357
+2025-03-05T00:42:41.263Z  INFO 1 --- [http-nio-8081-exec-2] com.wit.calculator.CalculatorService     : Calculando multiplicação: 21 * 17
+2025-03-05T00:42:41.265Z  INFO 1 --- [http-nio-8081-exec-2] com.wit.rest.CalculatorController        : UUID=3e1aab86-beee-4220-a15f-ff320bd66649 | Operação=multiplication | a=21 | b=17 | Resultado=357
+2025-03-05T00:42:41.288Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] com.wit.rest.kafka.OperationConsumer     : UUID=3e1aab86-beee-4220-a15f-ff320bd66649 | Mensagem recebida via Kafka: Operação=multiplication | a=21 | b=17 | Resultado=357
+2025-03-05T00:43:53.822Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Revoke previously assigned partitions calc-requests-0
+2025-03-05T00:43:53.825Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : calc-group: partitions revoked: [calc-requests-0]
+2025-03-05T00:43:53.828Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Member consumer-calc-group-1-91352660-6486-48ed-9fcf-41ee3f829b1a sending LeaveGroup request to coordinator kafka:9092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+2025-03-05T00:43:53.832Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-03-05T00:43:53.834Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Request joining group due to: consumer pro-actively leaving the group
+2025-03-05T00:43:53.836Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Unsubscribed all topics or patterns and assigned partitions
+2025-03-05T00:43:53.842Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-03-05T00:43:53.843Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Request joining group due to: consumer pro-actively leaving the group
+2025-03-05T00:43:54.241Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2025-03-05T00:43:54.242Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-03-05T00:43:54.244Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2025-03-05T00:43:54.247Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2025-03-05T00:43:54.270Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.consumer for consumer-calc-group-1 unregistered
+2025-03-05T00:43:54.275Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : calc-group: Consumer stopped
+2025-03-05T00:43:54.285Z  INFO 1 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-05T00:43:54.323Z  INFO 1 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-05T00:43:54.340Z  INFO 1 --- [SpringApplicationShutdownHook] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2025-03-05T00:43:54.377Z  INFO 1 --- [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Metrics scheduler closed
+2025-03-05T00:43:54.384Z  INFO 1 --- [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-03-05T00:43:54.387Z  INFO 1 --- [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2025-03-05T00:43:54.393Z  INFO 1 --- [SpringApplicationShutdownHook] o.apache.kafka.common.metrics.Metrics    : Metrics reporters closed
+2025-03-05T00:43:54.398Z  INFO 1 --- [SpringApplicationShutdownHook] o.a.kafka.common.utils.AppInfoParser     : App info kafka.producer for producer-1 unregistered
 2025-03-05T00:49:01.081Z  INFO 1 --- [main] com.wit.rest.CalculatorApiApplication    : Starting CalculatorApiApplication v0.0.1-SNAPSHOT using Java 17.0.2 with PID 1 (/app/app.jar started by root in /app)
 2025-03-05T00:49:01.115Z DEBUG 1 --- [main] com.wit.rest.CalculatorApiApplication    : Running with Spring Boot v3.4.3, Spring v6.2.3
 2025-03-05T00:49:01.166Z  INFO 1 --- [main] com.wit.rest.CalculatorApiApplication    : No active profile set, falling back to 1 default profile: "default"
@@ -1575,3 +571,246 @@
 2025-03-05T01:21:25.068Z  INFO 1 --- [main] com.wit.rest.CalculatorApiApplication    : No active profile set, falling back to 1 default profile: "default"
 2025-03-05T01:21:36.627Z  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
 2025-03-05T01:21:36.996Z  INFO 1 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 11272 ms
+2025-03-05T01:54:53.108Z  INFO 1 --- [main] com.wit.rest.CalculatorApiApplication    : Starting CalculatorApiApplication v0.0.1-SNAPSHOT using Java 17.0.2 with PID 1 (/app/app.jar started by root in /app)
+2025-03-05T01:54:53.135Z DEBUG 1 --- [main] com.wit.rest.CalculatorApiApplication    : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-05T01:54:53.150Z  INFO 1 --- [main] com.wit.rest.CalculatorApiApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-03-05T01:55:06.403Z  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-03-05T01:55:06.541Z  INFO 1 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-05T01:55:06.556Z  INFO 1 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-05T01:55:06.725Z  INFO 1 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-05T01:55:06.745Z  INFO 1 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 12918 ms
+2025-03-05T01:55:15.103Z  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-03-05T01:55:16.237Z  INFO 1 --- [main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [kafka:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-calc-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = calc-group
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2025-03-05T01:55:17.060Z  INFO 1 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-05T01:55:17.107Z  INFO 1 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-05T01:55:17.136Z  INFO 1 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 26 ms
+2025-03-05T01:55:17.267Z  INFO 1 --- [http-nio-8081-exec-1] c.wit.rest.logging.RequestLoggingFilter  : Iniciando requisição com requestId=3bd4b1ca-4cf3-41a4-a94f-490e5e3b1978
+2025-03-05T01:55:18.027Z  INFO 1 --- [main] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2025-03-05T01:55:18.292Z  INFO 1 --- [http-nio-8081-exec-1] com.wit.calculator.CalculatorService     : Calculando divisão: 21 / 3
+2025-03-05T01:55:18.337Z  INFO 1 --- [http-nio-8081-exec-1] com.wit.rest.CalculatorController        : UUID=3c1c60c5-53be-4f82-8271-b4c8c5ea91e9 | Operation=division | a=21 | b=3 | Result=7.0000000000
+2025-03-05T01:55:18.610Z  INFO 1 --- [http-nio-8081-exec-1] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [kafka:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.gzip.level = -1
+	compression.lz4.level = 9
+	compression.type = none
+	compression.zstd.level = 3
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	enable.metrics.push = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
+
+2025-03-05T01:55:19.640Z  INFO 1 --- [http-nio-8081-exec-1] o.a.k.c.t.i.KafkaMetricsCollector        : initializing Kafka metrics collector
+2025-03-05T01:55:20.227Z  INFO 1 --- [http-nio-8081-exec-1] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Instantiated an idempotent producer.
+2025-03-05T01:55:21.068Z  INFO 1 --- [http-nio-8081-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.8.1
+2025-03-05T01:55:21.101Z  INFO 1 --- [http-nio-8081-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 70d6ff42debf7e17
+2025-03-05T01:55:21.104Z  INFO 1 --- [http-nio-8081-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1741139721064
+2025-03-05T01:55:21.610Z  INFO 1 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.8.1
+2025-03-05T01:55:21.611Z  INFO 1 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: 70d6ff42debf7e17
+2025-03-05T01:55:21.613Z  INFO 1 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1741139721609
+2025-03-05T01:55:21.677Z  INFO 1 --- [main] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Subscribed to topic(s): calc-requests
+2025-03-05T01:55:22.111Z  INFO 1 --- [main] com.wit.rest.CalculatorApiApplication    : Started CalculatorApiApplication in 35.496 seconds (process running for 39.528)
+2025-03-05T01:55:27.185Z  INFO 1 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: 5o5e3bFWRTOj7WIqk6dvAA
+2025-03-05T01:55:27.223Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] org.apache.kafka.clients.Metadata        : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Cluster ID: 5o5e3bFWRTOj7WIqk6dvAA
+2025-03-05T01:55:27.226Z  INFO 1 --- [kafka-producer-network-thread | producer-1] o.a.k.c.p.internals.TransactionManager   : [Producer clientId=producer-1] ProducerId set to 1 with epoch 0
+2025-03-05T01:55:27.252Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Discovered group coordinator kafka:9092 (id: 2147483646 rack: null)
+2025-03-05T01:55:27.285Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] (Re-)joining group
+2025-03-05T01:55:27.624Z  INFO 1 --- [http-nio-8081-exec-2] c.wit.rest.logging.RequestLoggingFilter  : Iniciando requisição com requestId=3d1987f9-5b04-416d-b3e3-d0a621834be1
+2025-03-05T01:55:27.725Z  INFO 1 --- [http-nio-8081-exec-2] com.wit.calculator.CalculatorService     : Calculando divisão: 21 / 3
+2025-03-05T01:55:27.728Z  INFO 1 --- [http-nio-8081-exec-2] com.wit.rest.CalculatorController        : UUID=dcfbd87a-a6c5-4929-939a-c2b37412f4c7 | Operation=division | a=21 | b=3 | Result=7.0000000000
+2025-03-05T01:55:28.038Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Request joining group due to: need to re-join with the given member-id: consumer-calc-group-1-4b728640-8d68-47f3-b259-20fe81cf5d74
+2025-03-05T01:55:28.042Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] (Re-)joining group
+2025-03-05T01:55:31.138Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Successfully joined group with generation Generation{generationId=3, memberId='consumer-calc-group-1-4b728640-8d68-47f3-b259-20fe81cf5d74', protocol='range'}
+2025-03-05T01:55:31.219Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Finished assignment for group at generation 3: {consumer-calc-group-1-4b728640-8d68-47f3-b259-20fe81cf5d74=Assignment(partitions=[]), consumer-calc-group-1-0ac787ef-8b9d-4a1b-8386-8cc73d759b0c=Assignment(partitions=[calc-requests-0])}
+2025-03-05T01:55:31.307Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Successfully synced group in generation Generation{generationId=3, memberId='consumer-calc-group-1-4b728640-8d68-47f3-b259-20fe81cf5d74', protocol='range'}
+2025-03-05T01:55:31.329Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Notifying assignor about the new Assignment(partitions=[])
+2025-03-05T01:55:31.344Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] k.c.c.i.ConsumerRebalanceListenerInvoker : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Adding newly assigned partitions: 
+2025-03-05T01:55:31.393Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : calc-group: partitions assigned: []
+2025-03-05T01:57:45.004Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Member consumer-calc-group-1-4b728640-8d68-47f3-b259-20fe81cf5d74 sending LeaveGroup request to coordinator kafka:9092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+2025-03-05T01:57:45.124Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-03-05T01:57:45.129Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Request joining group due to: consumer pro-actively leaving the group
+2025-03-05T01:57:45.131Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.LegacyKafkaConsumer  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Unsubscribed all topics or patterns and assigned partitions
+2025-03-05T01:57:45.287Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-03-05T01:57:45.306Z  INFO 1 --- [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : [Consumer clientId=consumer-calc-group-1, groupId=calc-group] Request joining group due to: consumer pro-actively leaving the group

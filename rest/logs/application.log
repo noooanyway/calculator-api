@@ -63,3 +63,42 @@
 2025-03-05T00:31:52.841Z ERROR 4044 --- [main] com.wit.rest.CalculatorController        : Erro UUID=1c446297-02a4-46dc-b3a4-64946e13a982 | Operação=division | a=10 | b=0 | Erro=Divisão por zero não permitida.
 2025-03-05T00:31:53.476Z  INFO 4044 --- [main] com.wit.rest.CalculatorController        : UUID=0aada135-77b2-4d94-a469-8ff7785c4cf3 | Operação=sum | a=5 | b=3 | Resultado=8
 2025-03-05T00:31:53.546Z ERROR 4044 --- [main] com.wit.rest.CalculatorController        : Erro UUID=e45d0fbf-4b81-4a2e-b0d3-cf6ef07438d9 | Operação=division | a=10 | b=0 | Erro=Divisão por zero não permitida.
+2025-03-05T01:50:02.605Z  INFO 11404 --- [main] com.wit.rest.CalculatorApiTest           : Starting CalculatorApiTest using Java 18.0.2.1 with PID 11404 (started by Utilizador in C:\Users\Utilizador\Desktop\calculator-api\calculator-api\rest)
+2025-03-05T01:50:02.608Z DEBUG 11404 --- [main] com.wit.rest.CalculatorApiTest           : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-05T01:50:02.611Z  INFO 11404 --- [main] com.wit.rest.CalculatorApiTest           : No active profile set, falling back to 1 default profile: "default"
+2025-03-05T01:50:08.462Z  INFO 11404 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-03-05T01:50:08.466Z  INFO 11404 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-03-05T01:50:08.471Z  INFO 11404 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 4 ms
+2025-03-05T01:50:08.553Z  INFO 11404 --- [main] com.wit.rest.CalculatorApiTest           : Started CalculatorApiTest in 7.002 seconds (process running for 9.689)
+2025-03-05T01:50:08.990Z  INFO 11404 --- [main] c.wit.rest.logging.RequestLoggingFilter  : Iniciando requisição com requestId=ce9a4274-002c-421a-b973-7cc8ead8bbe7
+2025-03-05T01:50:09.143Z  INFO 11404 --- [main] com.wit.rest.CalculatorController        : UUID=a9e71cbf-7b22-4791-a28a-a31d09a82490 | Operation=sum | a=5 | b=3 | Result=8
+2025-03-05T01:50:09.575Z  INFO 11404 --- [main] c.wit.rest.logging.RequestLoggingFilter  : Iniciando requisição com requestId=de79f465-6333-4ceb-a056-2839b543677b
+2025-03-05T01:50:09.580Z ERROR 11404 --- [main] com.wit.rest.CalculatorController        : Error UUID=0f92355c-aefc-486f-8a99-4e0a4a42519e | Operation=division | a=10 | b=0 | Error=Divisão por zero não permitida.
+2025-03-05T01:50:10.204Z  INFO 11404 --- [main] com.wit.rest.CalculatorController        : UUID=be646b6e-0fe7-43d9-960d-93afad0d02e6 | Operation=sum | a=5 | b=3 | Result=8
+2025-03-05T01:50:10.262Z ERROR 11404 --- [main] com.wit.rest.CalculatorController        : Error UUID=6aae1ab6-63cb-48fb-bb22-ada0ddd9232c | Operation=division | a=10 | b=0 | Error=Divisão por zero não permitida.
+2025-03-05T01:51:31.311Z  INFO 11132 --- [main] com.wit.rest.CalculatorApiTest           : Starting CalculatorApiTest using Java 18.0.2.1 with PID 11132 (started by Utilizador in C:\Users\Utilizador\Desktop\calculator-api\calculator-api\rest)
+2025-03-05T01:51:31.315Z DEBUG 11132 --- [main] com.wit.rest.CalculatorApiTest           : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-05T01:51:31.317Z  INFO 11132 --- [main] com.wit.rest.CalculatorApiTest           : No active profile set, falling back to 1 default profile: "default"
+2025-03-05T01:51:38.666Z  INFO 11132 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-03-05T01:51:38.668Z  INFO 11132 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-03-05T01:51:38.671Z  INFO 11132 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+2025-03-05T01:51:38.779Z  INFO 11132 --- [main] com.wit.rest.CalculatorApiTest           : Started CalculatorApiTest in 8.933 seconds (process running for 13.042)
+2025-03-05T01:51:39.103Z  INFO 11132 --- [main] c.wit.rest.logging.RequestLoggingFilter  : Iniciando requisição com requestId=0fc96370-2145-4c39-8520-d72efe4260ed
+2025-03-05T01:51:39.256Z  INFO 11132 --- [main] com.wit.rest.CalculatorController        : UUID=008fe4e6-cc83-47c5-b215-d9c84edd766b | Operation=sum | a=5 | b=3 | Result=8
+2025-03-05T01:51:39.706Z  INFO 11132 --- [main] c.wit.rest.logging.RequestLoggingFilter  : Iniciando requisição com requestId=aab5eb84-e88d-436e-ada8-b160ad61a71b
+2025-03-05T01:51:39.714Z ERROR 11132 --- [main] com.wit.rest.CalculatorController        : Error UUID=a1200fb9-c1bf-4f9e-90af-eddbe5f56298 | Operation=division | a=10 | b=0 | Error=Divisão por zero não permitida.
+2025-03-05T01:51:40.429Z  INFO 11132 --- [main] com.wit.rest.CalculatorController        : UUID=de671323-4628-4a60-a16d-f4570c85c1c0 | Operation=sum | a=5 | b=3 | Result=8
+2025-03-05T01:51:40.478Z ERROR 11132 --- [main] com.wit.rest.CalculatorController        : Error UUID=af950761-011d-4d00-8643-acf3243dc1af | Operation=division | a=10 | b=0 | Error=Divisão por zero não permitida.
+2025-03-05T01:53:18.388Z  INFO 5392 --- [main] com.wit.rest.CalculatorApiTest           : Starting CalculatorApiTest using Java 18.0.2.1 with PID 5392 (started by Utilizador in C:\Users\Utilizador\Desktop\calculator-api\calculator-api\rest)
+2025-03-05T01:53:18.395Z DEBUG 5392 --- [main] com.wit.rest.CalculatorApiTest           : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-05T01:53:18.398Z  INFO 5392 --- [main] com.wit.rest.CalculatorApiTest           : No active profile set, falling back to 1 default profile: "default"
+2025-03-05T01:53:23.202Z  INFO 5392 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-03-05T01:53:23.204Z  INFO 5392 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-03-05T01:53:23.208Z  INFO 5392 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+2025-03-05T01:53:23.280Z  INFO 5392 --- [main] com.wit.rest.CalculatorApiTest           : Started CalculatorApiTest in 5.81 seconds (process running for 8.36)
+2025-03-05T01:53:23.555Z  INFO 5392 --- [main] c.wit.rest.logging.RequestLoggingFilter  : Iniciando requisição com requestId=3ee10ca8-e08a-4ec3-83fa-61add8367339
+2025-03-05T01:53:23.680Z  INFO 5392 --- [main] com.wit.rest.CalculatorController        : UUID=16a54ac1-0de5-47e9-b721-a3e3a915e798 | Operation=sum | a=5 | b=3 | Result=8
+2025-03-05T01:53:23.976Z  INFO 5392 --- [main] c.wit.rest.logging.RequestLoggingFilter  : Iniciando requisição com requestId=df7a5116-8a2d-49f4-9a67-e6472688db7f
+2025-03-05T01:53:23.980Z ERROR 5392 --- [main] com.wit.rest.CalculatorController        : Error UUID=312b5f43-cd05-4211-ad72-0680eee898f5 | Operation=division | a=10 | b=0 | Error=Divisão por zero não permitida.
+2025-03-05T01:53:24.346Z  INFO 5392 --- [main] com.wit.rest.CalculatorController        : UUID=f59148cf-2847-48d6-adf4-86df0d395a9a | Operation=sum | a=5 | b=3 | Result=8
+2025-03-05T01:53:24.390Z ERROR 5392 --- [main] com.wit.rest.CalculatorController        : Error UUID=e785c693-88bb-41ac-b6a5-fab4cc371af9 | Operation=division | a=10 | b=0 | Error=Divisão por zero não permitida.

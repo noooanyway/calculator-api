@@ -151,7 +151,7 @@ public class CalculatorController {
 
         } catch (ArithmeticException e) {
             // Handle division by zero and other arithmetic errors
-            String errorMessage = "Operation error: " + e.getMessage();
+            String errorMessage = "Erro na operação: " + e.getMessage();
             logger.error("Error UUID={} | Operation={} | a={} | b={} | Error={}", requestId, operation, a, b, e.getMessage());
             responseBody.put("error", errorMessage);
             response.setStatus(400); // CLIENT_ERROR
