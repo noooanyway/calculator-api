@@ -1,0 +1,6 @@
+com.wit.calculator
+com.wit.rest
+com.wit.rest.config
+com.wit.rest.kafka
+com.wit.rest.logging
+com.wit.rest.model

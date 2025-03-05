@@ -1,0 +1,65 @@
+2025-03-05T00:06:24.982Z  INFO 18700 --- [main] com.wit.rest.CalculatorApiTest           : Starting CalculatorApiTest using Java 18.0.2.1 with PID 18700 (started by Utilizador in C:\Users\Utilizador\Desktop\calculator-api\calculator-api\rest)
+2025-03-05T00:06:25.031Z DEBUG 18700 --- [main] com.wit.rest.CalculatorApiTest           : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-05T00:06:25.033Z  INFO 18700 --- [main] com.wit.rest.CalculatorApiTest           : No active profile set, falling back to 1 default profile: "default"
+2025-03-05T00:06:29.999Z  INFO 18700 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-03-05T00:06:30.002Z  INFO 18700 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-03-05T00:06:30.008Z  INFO 18700 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 5 ms
+2025-03-05T00:06:30.087Z  INFO 18700 --- [main] com.wit.rest.CalculatorApiTest           : Started CalculatorApiTest in 6.082 seconds (process running for 8.558)
+2025-03-05T00:06:30.368Z  INFO 18700 --- [main] c.wit.rest.logging.RequestLoggingFilter  : Iniciando requisição com requestId=85b0e2d7-f559-4491-a8b5-0f66c51f9ead
+2025-03-05T00:06:30.459Z  INFO 18700 --- [main] com.wit.rest.CalculatorController        : UUID=f673708a-c677-4478-9173-7d0980b837ca | Operação=sum | a=5 | b=3 | Resultado=8
+2025-03-05T00:06:30.739Z  INFO 18700 --- [main] c.wit.rest.logging.RequestLoggingFilter  : Iniciando requisição com requestId=e68e4048-1fe6-4726-a6c1-014aab15154a
+2025-03-05T00:06:30.742Z ERROR 18700 --- [main] com.wit.rest.CalculatorController        : Erro UUID=6320f603-d5c3-4d51-a317-55379eeb6cea | Operação=division | a=10 | b=0 | Erro=Divisão por zero não permitida.
+2025-03-05T00:06:31.115Z  INFO 18700 --- [main] com.wit.rest.CalculatorController        : UUID=f1242535-7bc6-478d-a23e-2678873772ef | Operação=sum | a=5 | b=3 | Resultado=null
+2025-03-05T00:06:31.162Z  INFO 18700 --- [main] com.wit.rest.CalculatorController        : UUID=d02c331c-57cd-4945-ba3f-c0b15ebdb0f9 | Operação=division | a=10 | b=0 | Resultado=null
+2025-03-05T00:09:27.949Z  INFO 2912 --- [main] com.wit.rest.CalculatorApiTest           : Starting CalculatorApiTest using Java 18.0.2.1 with PID 2912 (started by Utilizador in C:\Users\Utilizador\Desktop\calculator-api\calculator-api\rest)
+2025-03-05T00:09:27.981Z DEBUG 2912 --- [main] com.wit.rest.CalculatorApiTest           : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-05T00:09:27.985Z  INFO 2912 --- [main] com.wit.rest.CalculatorApiTest           : No active profile set, falling back to 1 default profile: "default"
+2025-03-05T00:09:35.872Z  INFO 2912 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-03-05T00:09:35.875Z  INFO 2912 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-03-05T00:09:35.880Z  INFO 2912 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2025-03-05T00:09:36.023Z  INFO 2912 --- [main] com.wit.rest.CalculatorApiTest           : Started CalculatorApiTest in 9.573 seconds (process running for 13.135)
+2025-03-05T00:09:36.554Z  INFO 2912 --- [main] c.wit.rest.logging.RequestLoggingFilter  : Iniciando requisição com requestId=8414bb61-581a-45fb-a46a-d30a23e16b28
+2025-03-05T00:09:36.752Z  INFO 2912 --- [main] com.wit.rest.CalculatorController        : UUID=9ef2ef28-dfe0-48ab-b18e-baea62cfdd21 | Operação=sum | a=5 | b=3 | Resultado=8
+2025-03-05T00:09:37.431Z  INFO 2912 --- [main] c.wit.rest.logging.RequestLoggingFilter  : Iniciando requisição com requestId=45e520e0-90c3-4316-a287-4d2183a4d3f0
+2025-03-05T00:09:37.455Z ERROR 2912 --- [main] com.wit.rest.CalculatorController        : Erro UUID=8f84b552-240e-4332-9d70-7fa903e55177 | Operação=division | a=10 | b=0 | Erro=Divisão por zero não permitida.
+2025-03-05T00:09:38.491Z  INFO 2912 --- [main] com.wit.rest.CalculatorController        : UUID=b35fd2eb-d6b8-4093-8944-46e86ef3f11b | Operação=sum | a=5 | b=3 | Resultado=null
+2025-03-05T00:09:38.535Z  INFO 2912 --- [main] com.wit.rest.CalculatorController        : UUID=4ea12cf9-dc9a-449d-9226-3785d49b5d93 | Operação=division | a=10 | b=0 | Resultado=null
+2025-03-05T00:13:15.167Z  INFO 17292 --- [main] com.wit.rest.CalculatorApiTest           : Starting CalculatorApiTest using Java 18.0.2.1 with PID 17292 (started by Utilizador in C:\Users\Utilizador\Desktop\calculator-api\calculator-api\rest)
+2025-03-05T00:13:15.170Z DEBUG 17292 --- [main] com.wit.rest.CalculatorApiTest           : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-05T00:13:15.174Z  INFO 17292 --- [main] com.wit.rest.CalculatorApiTest           : No active profile set, falling back to 1 default profile: "default"
+2025-03-05T00:13:23.637Z  INFO 17292 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-03-05T00:13:23.638Z  INFO 17292 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-03-05T00:13:23.664Z  INFO 17292 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 25 ms
+2025-03-05T00:13:23.742Z  INFO 17292 --- [main] com.wit.rest.CalculatorApiTest           : Started CalculatorApiTest in 11.733 seconds (process running for 14.039)
+2025-03-05T00:13:24.049Z  INFO 17292 --- [main] c.wit.rest.logging.RequestLoggingFilter  : Iniciando requisição com requestId=b5d07c2a-2bf4-4f15-b44e-a1477c5331b5
+2025-03-05T00:13:24.179Z  INFO 17292 --- [main] com.wit.rest.CalculatorController        : UUID=7b096782-f44d-4bcc-bbe7-b3aa1c81d1ea | Operação=sum | a=5 | b=3 | Resultado=8
+2025-03-05T00:13:24.604Z  INFO 17292 --- [main] c.wit.rest.logging.RequestLoggingFilter  : Iniciando requisição com requestId=cbf5aee5-0a0c-49ed-a8ac-66de11a2c005
+2025-03-05T00:13:24.613Z ERROR 17292 --- [main] com.wit.rest.CalculatorController        : Erro UUID=399cab58-592b-47b6-a7db-ab0b3b91f013 | Operação=division | a=10 | b=0 | Erro=Divisão por zero não permitida.
+2025-03-05T00:13:25.546Z  INFO 17292 --- [main] com.wit.rest.CalculatorController        : UUID=8baae406-a85d-46ab-834f-1d069a521ce8 | Operação=sum | a=5 | b=3 | Resultado=null
+2025-03-05T00:13:25.595Z  INFO 17292 --- [main] com.wit.rest.CalculatorController        : UUID=73bfbb5b-2970-47d0-9b85-1ba0d26d7600 | Operação=division | a=10 | b=0 | Resultado=null
+2025-03-05T00:28:29.194Z  INFO 18240 --- [main] com.wit.rest.CalculatorApiTest           : Starting CalculatorApiTest using Java 18.0.2.1 with PID 18240 (started by Utilizador in C:\Users\Utilizador\Desktop\calculator-api\calculator-api\rest)
+2025-03-05T00:28:29.204Z DEBUG 18240 --- [main] com.wit.rest.CalculatorApiTest           : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-05T00:28:29.209Z  INFO 18240 --- [main] com.wit.rest.CalculatorApiTest           : No active profile set, falling back to 1 default profile: "default"
+2025-03-05T00:28:37.307Z  INFO 18240 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-03-05T00:28:37.309Z  INFO 18240 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-03-05T00:28:37.316Z  INFO 18240 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 6 ms
+2025-03-05T00:28:37.444Z  INFO 18240 --- [main] com.wit.rest.CalculatorApiTest           : Started CalculatorApiTest in 9.39 seconds (process running for 12.065)
+2025-03-05T00:28:37.759Z  INFO 18240 --- [main] c.wit.rest.logging.RequestLoggingFilter  : Iniciando requisição com requestId=26e9987c-34a1-49dd-b769-ed0a5ed1a126
+2025-03-05T00:28:37.928Z  INFO 18240 --- [main] com.wit.rest.CalculatorController        : UUID=4efff77a-f460-4498-adcf-c9ed20afa50b | Operação=sum | a=5 | b=3 | Resultado=8
+2025-03-05T00:28:38.258Z  INFO 18240 --- [main] c.wit.rest.logging.RequestLoggingFilter  : Iniciando requisição com requestId=87b8c8e5-6562-4ca3-8d56-5cc8f9e0dc97
+2025-03-05T00:28:38.267Z ERROR 18240 --- [main] com.wit.rest.CalculatorController        : Erro UUID=19bf8f75-d7f3-4b26-b7db-ebc5fa07b6e4 | Operação=division | a=10 | b=0 | Erro=Divisão por zero não permitida.
+2025-03-05T00:28:38.667Z  INFO 18240 --- [main] com.wit.rest.CalculatorController        : UUID=b4ea10df-df85-4ba3-bb45-0080bb0a1267 | Operação=sum | a=5 | b=3 | Resultado=8
+2025-03-05T00:28:38.707Z ERROR 18240 --- [main] com.wit.rest.CalculatorController        : Erro UUID=88d477da-f7a7-4f09-b88a-e50914291e44 | Operação=division | a=10 | b=0 | Erro=Divisão por zero não permitida.
+2025-03-05T00:31:45.991Z  INFO 4044 --- [main] com.wit.rest.CalculatorApiTest           : Starting CalculatorApiTest using Java 18.0.2.1 with PID 4044 (started by Utilizador in C:\Users\Utilizador\Desktop\calculator-api\calculator-api\rest)
+2025-03-05T00:31:46.002Z DEBUG 4044 --- [main] com.wit.rest.CalculatorApiTest           : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-05T00:31:46.004Z  INFO 4044 --- [main] com.wit.rest.CalculatorApiTest           : No active profile set, falling back to 1 default profile: "default"
+2025-03-05T00:31:51.787Z  INFO 4044 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-03-05T00:31:51.788Z  INFO 4044 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-03-05T00:31:51.792Z  INFO 4044 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+2025-03-05T00:31:51.893Z  INFO 4044 --- [main] com.wit.rest.CalculatorApiTest           : Started CalculatorApiTest in 7.288 seconds (process running for 10.311)
+2025-03-05T00:31:52.272Z  INFO 4044 --- [main] c.wit.rest.logging.RequestLoggingFilter  : Iniciando requisição com requestId=be1aa53e-189e-4285-bfa4-46c99c51cdc2
+2025-03-05T00:31:52.436Z  INFO 4044 --- [main] com.wit.rest.CalculatorController        : UUID=584db704-27d0-44ba-ad3f-a4d98c8e392e | Operação=sum | a=5 | b=3 | Resultado=8
+2025-03-05T00:31:52.832Z  INFO 4044 --- [main] c.wit.rest.logging.RequestLoggingFilter  : Iniciando requisição com requestId=d616b5f6-fe15-42f4-9c95-6db1ff371d38
+2025-03-05T00:31:52.841Z ERROR 4044 --- [main] com.wit.rest.CalculatorController        : Erro UUID=1c446297-02a4-46dc-b3a4-64946e13a982 | Operação=division | a=10 | b=0 | Erro=Divisão por zero não permitida.
+2025-03-05T00:31:53.476Z  INFO 4044 --- [main] com.wit.rest.CalculatorController        : UUID=0aada135-77b2-4d94-a469-8ff7785c4cf3 | Operação=sum | a=5 | b=3 | Resultado=8
+2025-03-05T00:31:53.546Z ERROR 4044 --- [main] com.wit.rest.CalculatorController        : Erro UUID=e45d0fbf-4b81-4a2e-b0d3-cf6ef07438d9 | Operação=division | a=10 | b=0 | Erro=Divisão por zero não permitida.

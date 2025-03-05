@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<!-- Definimos como "pai" o Spring Boot Starter Parent -->
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>3.4.3</version>
+		<relativePath/>
+	</parent>
+
+	<groupId>com.wit</groupId>
+	<artifactId>calculator-api</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<!-- Embalagem POM, pois este projeto não é executável, apenas agrega módulos -->
+	<packaging>pom</packaging>
+
+	<name>calculator-api</name>
+	<description>Projeto multi-módulo com REST e Calculator</description>
+
+	<!-- Declaração dos módulos filhos -->
+	<modules>
+		<module>calculator</module>
+		<module>rest</module>
+	</modules>
+
+	<!-- Propriedades gerais (versão do Java, etc.) -->
+	<properties>
+		<java.version>17</java.version>
+	</properties>
+
+	<!-- Dependências comuns que TODOS os módulos podem herdar (opcional) -->
+	<dependencies>
+		<!-- Se quiser que todos os módulos usem Spring Web e Kafka, pode deixar aqui.
+             Se forem só para o módulo REST, você pode mover para o pom do rest. -->
+		<!-- Exemplo:
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.kafka</groupId>
+            <artifactId>spring-kafka</artifactId>
+        </dependency>
+        -->
+	</dependencies>
+
+	<!-- Plugins que podem ser compartilhados pelos submódulos -->
+	<build>
+		<plugins>
+			<!-- Plugin do Spring Boot -->
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<!--
+                   Se quiser que apenas o módulo REST seja executável,
+                   pode colocar esse plugin apenas no POM do rest.
+                -->
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.0.0-M7</version>
+				<configuration>
+					<includes>
+						<include>**/*Test.java</include>
+					</includes>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.wit.calculator"},{"l":"com.wit.rest"},{"l":"com.wit.rest.config"},{"l":"com.wit.rest.kafka"},{"l":"com.wit.rest.logging"},{"l":"com.wit.rest.model"}];updateSearchResults();
