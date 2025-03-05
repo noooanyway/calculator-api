@@ -208,8 +208,6 @@ If you want to contribute:
 
 ---
 
-## **Contact**
-For any issues or suggestions, open an **Issue** on GitHub or contact via **your-email@example.com**.
 
 ---
  
