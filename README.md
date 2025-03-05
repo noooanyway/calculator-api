@@ -207,7 +207,3 @@ If you want to contribute:
 5. **Open a Pull Request**
 
 ---
-
-
----
- 
